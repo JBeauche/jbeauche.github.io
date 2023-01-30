@@ -9,3 +9,5 @@ This project's goal is to create a website for Vintage Oasis Farm.
 The Vintage Oasis Farm website is brought to you by
 
 - Jessica Beauchemin, @JBeauche (Team Leader)
+
+This is a test.
