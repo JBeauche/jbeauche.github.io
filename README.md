@@ -1,6 +1,6 @@
 # VOF-Web
 
-[Vintage Oasis Farm Website](#vof-web)
+[Vintage Oasis Farm](#vof-web)
     [Team Members](#teammembers)
 
 This project's goal is to create a website for Vintage Oasis Farm.
