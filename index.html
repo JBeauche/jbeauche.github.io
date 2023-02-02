@@ -12,18 +12,20 @@
         <div class="header-image">
             <img src="images\vof-logo-banner-tbg.png">
         </div>
-        <nav>
-            <a href="./index.html">Accueil/Home</a>
+        <div class="topnav" id="mytopnav">
+            <a href="./index.html" class="active">Accueil/Home</a>
             <a href="./services.html">Services</a>
             <a href="./lessons.html">Cours/Lessons</a>
             <a href="./sale.html">À Vendre/For Sale</a>
             <a href="/lease.html">Demi-Pension/For Lease</a>
             <a href="./team.html">Notre Équipe/Our Team</a>
             <a href="./contact.html">Nous Contacter/Contact Us</a>
-        </nav>
+            <a href="javascript:void(0);" class="icon" onclick="getnavbar()"> <i class="fa fa-bars"></i></a>
+            </a>
+        </div>
+        <div w3-include-html="header.html"></div>
         <header>
-            <h1>Home</h1>
-            <h2>About Us</h2>
+            <h1>Accueil/Home</h1>
         </header>
         Vintage Oasis Farm is a private family oriented Boarding, Breeding & Training facility which focuses on foundation training across the English disciplines. 
         Our riding lesson program focuses on a neutral posture that prevents blocking the horses’ movements, enabling a softer contact with the horse. We offer a range of services that includes:
@@ -38,6 +40,10 @@
         <p>Our mission is to provide you piece of mind by providing optimal care to every horse with their health and well-being as our top priority. </p>
         <p>Vintage Oasis Farm is located in Saint-Jean-Sur-Richelieu, on the south shore of Montreal. We are conveniently located close to highway 30, 10, and 35.  Public transport is also available.</p>
         <p>Please contact for lease opportunities or any other inquiries.</p>
+        <script>
+            src="methods.js";
+            includeHTML();
+        </script>   
     </body>
 
 </HTML>
