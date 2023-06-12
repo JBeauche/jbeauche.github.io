@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ferme Vintage Oasis Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="style.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="images\vof-logo-banner-tbg.png" alt="logo" style="width:100%;margin-top:50px;min-height:auto;max-height:autopx;">
+</div>
+
+<div class="about">
+    <p>
+    La ferme Vintage Oasis est un centre équestre privé offrant à la fois structure et encadrement afin d'évoluer à cheval dans les disciplines d’équitation classique. Notre mission est de fournir à chaque cheval les soins et l’attention nécessaires à son bien-être et à son bon développement ainsi que donner aux cavaliers la possibilité d'apprendre dans un environnement calme et enrichissant. 
+    </p>
+    <p></p>
+    <p>
+        Nous sommes situé à Saint-Jean-Sur-Richelieu secteur Saint-Luc, sur la rive sud de Montréal près des autoroutes 30, 10 et 35 et est facilement accessible en transports en commun via la ligne 96A ou 96L du transport collectif de la ville de Saint-Jean-Sur-Richelieu .
+    </p>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>Notre Équipe</h2>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="josée lemaire" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Josée Lemaire</h3>
+  <p>Propriétaire</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="jessica beauchemin" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Jessica Beauchemin</h3>
+  <p>Entraineuse en Chef</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="chloé johnson" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Chloé Johnson</h3>
+  <p>Coach Chasseur/Sauteur en Chef</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="/w3images/avatar.jpg" alt="maya gulin" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Maya Gulin</h3>
+  <p>Coach Chasseur/Sauteur</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous Contacter</span></div>
+      <h3>Adresse</h3>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  775 boulevard Saint-Luc, St-Jean-Sur-Richelieu, Québec J2W 2G6</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  1-514-883-2315</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  infovintageoasis@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!--location/map -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.0987931861105!2d-73.33203772334541!3d45.36700143991829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9a733a2c052eb%3A0xf4d229a3d92b121e!2s775%20Bd%20Saint-Luc%2C%20Saint-Jean-sur-Richelieu%2C%20QC%20J2W%202G6!5e0!3m2!1sfr!2sca!4v1682962172738!5m2!1sfr!2sca" 
+width="100%" height="450" padding="10px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Retrouvez-nous sur les réseaux sociaux</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/vintageoasisfarm/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/ferme.vintage.oasis.farm/" title="Google +"><i class="fa fa-instagram"></i></a>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
