@@ -10,8 +10,14 @@ body{
 
 p {
     margin: 0.5%;
+    padding-bottom: 5px;
 }
 
+.justify {
+  text-align: justify;
+  text-justify: inner-word;
+  
+}
 .about{
     margin-top: 50px;
 }
@@ -103,9 +109,9 @@ button, input, select, textarea, optgroup {
   .disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
   .dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .dropdown-hover:hover .dropdown-content{display:block}
-.dropdown-hover:first-child,.dropdown-click:hover{background-color:#255636;color:#000}
-.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#255636;color:#000}
-.dropdown-content{cursor:auto;color:#000;background-color:#255636;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.dropdown-hover:first-child,.dropdown-click:hover{background-color:#C48D45;color:#000}
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#C48D45;color:#000}
+.dropdown-content{cursor:auto;color:#fff;background-color:#000;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
 .col,.half,.third,.twothird,.threequarter,.quarter{float:left;width:100%}
 @media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}}
