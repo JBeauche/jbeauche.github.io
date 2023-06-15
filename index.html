@@ -10,8 +10,8 @@
 </head>
 
 <body id="accueil">
-
-<!-- Sidebar on click -->
+  <script>src="script.js"</script>
+<!-- Sidebar on click 
 <nav class="sidebar bar-block gold card animate-left xxlarge" style="display:none;z-index:2" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button display-topright text-green">Close
     <i class="fa fa-remove"></i>
@@ -21,7 +21,7 @@
   <a href="#" class="bar-item button">Link 3</a>
   <a href="#" class="bar-item button">Link 4</a>
   <a href="#" class="bar-item button">Link 5</a>
-</nav>
+</nav>-->
 
 <!-- Navbar -->
 <div class="top">
@@ -32,14 +32,14 @@
     <button class=" button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content card-4 bar-block">
       <a href="ecole.html" class=" button hover-gold">École</a>
-      <a href="#" class=" button hover-gold">Pension</a>
-      <a href="#" class=" button hover-gold">Vente</a>
-      <a href="#" class=" button hover-gold">Entrainement</a>
+      <a href="pension.html" class=" button hover-gold">Pension</a>
+      <a href="vente.html" class=" button hover-gold">Vente</a>
+      <a href="entrainement.html" class=" button hover-gold">Entrainement</a>
     </div>
   </div>
-  <a href="#" class="bar-item button hide-small hover-gold">Évènements</a>
-  <a href="#" class="bar-item button hide-small hover-gold">Zoothérapie</a>
-  <a href="#" class="bar-item button hide-small hover-gold">Distribution Nature Belisle</a>
+  <a href="evenements.html" class="bar-item button hide-small hover-gold">Évènements</a>
+  <a href="zootherapie.html" class="bar-item button hide-small hover-gold">Zoothérapie</a>
+  <a href="distributeur.html" class="bar-item button hide-small hover-gold">Distributeur Nature Belisle</a>
  </div>
 
   <!-- Navbar on small screens -->
@@ -56,7 +56,6 @@
   <p>
   La ferme Vintage Oasis est un centre équestre privé offrant à la fois structure et encadrement afin d'évoluer à cheval dans les disciplines d’équitation classique. Notre mission est de fournir à chaque cheval les soins et l’attention nécessaires à son bien-être et à son bon développement ainsi que donner aux cavaliers la possibilité d'apprendre dans un environnement calme et enrichissant. 
   </p>
-  <p></p>
   <p>
       Nous sommes situé à Saint-Jean-Sur-Richelieu secteur Saint-Luc, sur la rive sud de Montréal près des autoroutes 30, 10 et 35. Nous sommes également facilement accessible en transports en commun via la ligne 96A ou 96L du transport collectif de la ville de Saint-Jean-Sur-Richelieu .
   </p>
@@ -161,23 +160,5 @@
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
-
-<script>
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("show") == -1) {
-    x.className += " show";
-  } else { 
-    x.className = x.className.replace(" show", "");
-  }
-}
-</script>
-
 </body>
 </html>
