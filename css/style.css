@@ -131,7 +131,7 @@ button, input, select, textarea, optgroup {
     font-size: 24px !important;
   }
   .image-slideshow {
-    max-width: 1000px;
+    max-width: 600px;
     position: relative;
     margin: auto;
   }
