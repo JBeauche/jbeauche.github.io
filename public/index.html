@@ -51,16 +51,15 @@
 <div class="display-container animate-opacity">
   <img src="/images/VOF logo.png" alt="logo" style=" display: block; margin-left: auto; margin-right: auto; width:auto;margin-top:50px;min-height:auto;max-height:500px;">
 </div>
-
-<div class="about justify">
+<!--About Container-->
+<div class="about justify container padding-64">
   <p>
-  La ferme Vintage Oasis est un centre équestre privé offrant à la fois structure et encadrement afin d'évoluer à cheval dans les disciplines d’équitation classique. Notre mission est de fournir à chaque cheval les soins et l’attention nécessaires à son bien-être et à son bon développement ainsi que donner aux cavaliers la possibilité d'apprendre dans un environnement calme et enrichissant. 
+  La ferme Vintage Oasis est un centre équestre privé offrant à la fois structure et encadrement afin d'évoluer à cheval dans les disciplines d'équitation classique. Notre mission est de fournir à chaque cheval les soins et l'attention nécessaires à son bien-être et à son bon développement ainsi que donner aux cavaliers la possibilité d'apprendre dans un environnement calme et enrichissant. 
   </p>
   <p>
       Nous sommes situé à Saint-Jean-Sur-Richelieu secteur Saint-Luc, sur la rive sud de Montréal près des autoroutes 30, 10 et 35. Nous sommes également facilement accessible en transports en commun via la ligne 96A ou 96L du transport collectif de la ville de Saint-Jean-Sur-Richelieu .
   </p>
 </div>
-
 <!-- Team Container -->
 <div class="container padding-64 center" id="team">
 <h2>Notre Équipe</h2>
@@ -100,6 +99,7 @@
 </div>
 
 </div>
+</div>
 <!-- next row
 <div class="row"><br>
 <div class="quarter">
@@ -108,41 +108,36 @@
   <p>titre</p>
 </div>
 </div>-->
-</div>
+
 <!-- Facilites Container -->
 <div class="container padding-64 center" id="installations">
   <h2>Nos Installations</h2>
-  <div class="image-slideshow">
-    <div class="image fade">
-    <img src="/images/outside.jpg" alt="outside">
-    </div>        
-    <div class="image fade">
-    <img src="/images/arena.jpg" alt="arena">
-    </div>        
-    <div class="image fade">
-    <img src="/images/allee2.jpg" alt="allee2">
-    </div>
-    <div class="image fade">
-      <img src="/images/tack1.jpg" alt="tack1">
-      </div>
-    <div class="image fade">
-      <img src="/images/tack2.jpg" alt="tack2">
-      </div>
-      <div class="image fade">
-        <img src="/images/feed.jpg" alt="feed">
-        </div>
-        <div class="image fade">
-          <img src="/images/douche.jpg" alt="douche">
-          </div>
   </div>
-  <script src="/script/slideshow.js"></script>
-  <about class="justify">
-    <p>bla bla bla</p>
-  </about>
+  <div class="gallery">
+  
+    <figure class="image"><img alt="Mitglieder" src="/images/outside.jpg" style="width: 300px; height: 225px;">
+      <figcaption>Écurie<br>
+        <span>Pension intérieure et extérieure</span></figcaption>
+    </figure>
+  
+    <figure class="image"><img alt="Mitglieder" src="/images/arena.jpg" style="width: 300px; height: 225px;">
+      <figcaption>Manège Intérieure<br>
+        <span>20m par 40m</span></figcaption>
+    </figure>
+  
+    <figure class="image"><img alt="Mitglieder" src="/images/allee2.jpg" style="width: 300px; height: 225px;">
+      <figcaption>Pension Intérieure<br>
+        <span>6 boxes 10'par 10'</span></figcaption>
+    </figure>
+  
+    <figure class="image"><img alt="Mitglieder" src="/images/tack1.jpg" style="width: 300px; height: 225px;">
+      <figcaption>Sellerie<br>
+        <span>Espace de rangement pour tous cavaliers</span></figcaption>
+    </figure>
+    
   </div>
-
 <!-- Contact Container -->
-<div class="container padding-64 theme-l5" id="contact">
+<div class="about justify container padding-64 theme-l5" id="contact">
 <div class="row">
   <div class="col m5">
   <div class="padding-16"><span class="xlarge border-green bottombar">Nous Contacter</span></div>
@@ -152,7 +147,7 @@
     <p><i class="fa fa-envelope-o text-green xlarge"></i>  infovintageoasis@gmail.com</p>
   </div>
   <!--location/map -->
-  <div class="col m7">
+  <div class="col m7" id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.0987931861105!2d-73.33203772334541!3d45.36700143991829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9a733a2c052eb%3A0xf4d229a3d92b121e!2s775%20Bd%20Saint-Luc%2C%20Saint-Jean-sur-Richelieu%2C%20QC%20J2W%202G6!5e0!3m2!1sfr!2sca!4v1682962172738!5m2!1sfr!2sca" 
     width="100%" height="450" padding="10px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
@@ -186,8 +181,7 @@
   <a class="button xxlarge" href="https://www.instagram.com/ferme.vintage.oasis.farm/" title="Instagram"><i class="fa fa-instagram"></i></a>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="tooltip right">
-    <span class="text padding green hide-small">Go To Top</span>   
-    <a class="button theme" href="#myPage"><span class="xlarge">
+    <a class="button theme" href="#accueil"><span class="xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
