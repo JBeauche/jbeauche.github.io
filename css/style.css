@@ -155,8 +155,12 @@ button, input, select, textarea, optgroup {
     margin: 10px 10px;
     padding: 0;
   }
+  .collage{
+    width: 100%;
+    
+  }
   
-  figure.image {
+  .image {
     display: inline-block;
     position: relative;
   }
