@@ -9,19 +9,6 @@
     <link rel = "stylesheet" href="\style.css">
 </head>
 <body id="sale">
-  <script>src="/docs/script/script.js"</script>
-  <!-- Sidebar on click 
-  <nav class="sidebar bar-block gold card animate-left xxlarge" style="display:none;z-index:2" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button display-topright text-green">Close
-      <i class="fa fa-remove"></i>
-    </a>
-    <a href="#" class="bar-item button">Link 1</a>
-    <a href="#" class="bar-item button">Link 2</a>
-    <a href="#" class="bar-item button">Link 3</a>
-    <a href="#" class="bar-item button">Link 4</a>
-    <a href="#" class="bar-item button">Link 5</a>
-  </nav>-->
-  
 <!-- Navbar -->
 <div class="top">
     <div class="bar theme-d2 left-align">
@@ -42,11 +29,21 @@
      <a href="/docs/francais/vente.html" class="bar-item button hide-small hover-gold right">FR</a>
      <a href="/docs/english/index-en.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
     </div>
-  
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
-    </div>
   </div>
+      <!-- Navbar on small screens -->
+      <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%">
+      <a href="/docs/english/school.html" class="bar-item button">Riding School</a>
+      <a href="/docs/english/boarding.html" class="bar-item button">Boarding</a>
+      <a href="/docs/english/sale.html" class="bar-item button green">For Sale</a>
+      <a href="/docs/english/training.html" class="bar-item button">Training</a>
+      <a href="/docs/english/events.html" class="bar-item button">Events</a>
+      <a href="/docs/english/zootherapy.html" class="bar-item button">Zootherapy</a>
+      <a href="/docs/english/distributor-nature-belisle.html" class="bar-item button">Nature Bélisle Distributor</a>
+      <a href="/docs/english/index-en.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">FR</a>
+    </div>
 <!-- Sale Container -->
 <div class="container padding-64">
 <about class="justify">
@@ -142,5 +139,16 @@
       <i class="fa fa-chevron-circle-up"></i></span></a>
     </div>
 </footer>
+<script>
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else {
+      x.className = x.className.replace(" show", "");
+    }
+  }
+</script>
 </body>
 </html>

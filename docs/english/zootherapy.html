@@ -12,21 +12,6 @@
     <link rel="stylesheet" href="\style.css" />
   </head>
   <body id="zootherapy">
-    <script>
-      src = "/script/script.js";
-    </script>
-    <!-- Sidebar on click 
-  <nav class="sidebar bar-block gold card animate-left xxlarge" style="display:none;z-index:2" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button display-topright text-green">Close
-      <i class="fa fa-remove"></i>
-    </a>
-    <a href="#" class="bar-item button">Link 1</a>
-    <a href="#" class="bar-item button">Link 2</a>
-    <a href="#" class="bar-item button">Link 3</a>
-    <a href="#" class="bar-item button">Link 4</a>
-    <a href="#" class="bar-item button">Link 5</a>
-  </nav>-->
-
     <!-- Navbar -->
     <div class="top">
       <div class="bar theme-d2 left-align">
@@ -40,20 +25,20 @@
           ><i class="fa fa-home margin-right"></i>Home</a
         >
         <div class="dropdown-hover hide-small">
-          <button class=" button hover-gold" title="equitation">
+          <button class="button hover-gold" title="equitation">
             Equestrian<i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content card-4 bar-block">
-            <a href="/docs/english/school.html" class=" button hover-gold"
+            <a href="/docs/english/school.html" class="button hover-gold"
               >Riding School</a
             >
-            <a href="/docs/english/boarding.html" class=" button hover-gold"
+            <a href="/docs/english/boarding.html" class="button hover-gold"
               >Boarding</a
             >
-            <a href="/docs/english/sale.html" class=" button hover-gold"
+            <a href="/docs/english/sale.html" class="button hover-gold"
               >For Sale</a
             >
-            <a href="/docs/english/training.html" class=" button hover-gold"
+            <a href="/docs/english/training.html" class="button hover-gold"
               >Training</a
             >
           </div>
@@ -65,7 +50,7 @@
         >
         <a
           href="/docs/english/zootherapy.html"
-          class=" green bar-item button hide-small hover-gold"
+          class="green bar-item button hide-small hover-gold"
           >Zootherapy</a
         >
         <a
@@ -84,12 +69,32 @@
           >Contact</a
         >
       </div>
-
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="bar-block theme-d2 hide hide-large hide-medium"
-      ></div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/english/school.html" class="bar-item button"
+        >Riding School</a
+      >
+      <a href="/docs/english/boarding.html" class="bar-item button">Boarding</a>
+      <a href="/docs/english/sale.html" class="bar-item button">For Sale</a>
+      <a href="/docs/english/training.html" class="bar-item button">Training</a>
+      <a href="/docs/english/events.html" class="bar-item button">Events</a>
+      <a href="/docs/english/zootherapy.html" class="bar-item button green"
+        >Zootherapy</a
+      >
+      <a
+        href="/docs/english/distributor-nature-belisle.html"
+        class="bar-item button"
+        >Nature Bélisle Distributor</a
+      >
+      <a href="/docs/english/index-en.html#contact" class="bar-item button"
+        >Contact</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button">FR</a>
     </div>
     <!-- Zootherapy Container -->
     <div class="container padding-64 theme-l5">
@@ -134,7 +139,7 @@
           <img
             src="/docs/images/zoohautrichelieu.jpg"
             alt="zoothérapie haut richelieu"
-            style="width:15%"
+            style="width: 15%"
             class="circle hover-opacity"
           />
           <h3>Amélie Tétreault</h3>
@@ -186,34 +191,39 @@
             <h5>
               For more information, please contact Zoothérapie du Haut Richelieu
             </h5>
-            <p style="padding-left: 4.5%;padding-bottom:0%">
+            <p style="padding-left: 4.5%; padding-bottom: 0%">
               <i class="fa fa-phone text-black xlarge"></i
-              ><a href="tel:+14388880574" style="color:#000">1-438-888-0574</a>
+              ><a href="tel:+14388880574" style="color: #000">1-438-888-0574</a>
             </p>
             <p>
               <a
-                class="button large "
-                style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;"
+                class="button large"
+                style="
+                  padding-left: 5%;
+                  padding-right: 4%;
+                  padding-top: 0%;
+                  padding-bottom: 0%;
+                "
                 href="https://www.zootherapiehr.com"
                 target="_blank"
                 title="zoo-HR-web"
                 ><i
                   class="fa fa-info-circle xlarge"
-                  style="padding-right: 4%;"
+                  style="padding-right: 4%"
                 ></i
                 >zootherapiehr.com</a
               >
             </p>
             <p>
               <a
-                class="button large "
-                style="padding-left:5%;padding-right: 4%; padding-top: 0%;"
+                class="button large"
+                style="padding-left: 5%; padding-right: 4%; padding-top: 0%"
                 href="https://www.facebook.com/zootherapieHR"
                 target="_blank"
                 title="FacebookZooHR"
                 ><i
                   class="fa fa-facebook-official xlarge"
-                  style="padding-right: 4%;"
+                  style="padding-right: 4%"
                 ></i
                 >Zoothérapie du Haut-Richelieu</a
               >
@@ -225,10 +235,10 @@
 
     <!-- Footer -->
     <footer class="container padding-32 theme-d1">
-      <div style="position:relative;max-width: 300px;" class="tooltip left">
+      <div style="position: relative; max-width: 300px" class="tooltip left">
         <img src="/docs/images/logo-white-no-text.png" />
       </div>
-      <div class="center" style="position:relative; left: -7.5%;">
+      <div class="center" style="position: relative; left: -7.5%">
         <h3>Follow us on social media</h3>
         <a
           class="button xxlarge"
@@ -246,7 +256,7 @@
         ></a>
       </div>
       <div
-        style="position:relative;bottom:155px;z-index:1;"
+        style="position: relative; bottom: 155px; z-index: 1"
         class="tooltip right"
       >
         <a class="button theme" href="#zootherapy"
@@ -254,5 +264,16 @@
         ></a>
       </div>
     </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
   </body>
 </html>
