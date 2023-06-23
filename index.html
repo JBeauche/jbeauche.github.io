@@ -11,23 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-
   <body id="accueil">
-    <script>
-      src = "/docs/script/script.js";
-    </script>
-    <!-- Sidebar on click 
-<nav class="sidebar bar-block gold card animate-left xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button display-topright text-green">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="bar-item button">Link 1</a>
-  <a href="#" class="bar-item button">Link 2</a>
-  <a href="#" class="bar-item button">Link 3</a>
-  <a href="#" class="bar-item button">Link 4</a> 
-  <a href="#" class="bar-item button">Link 5</a>
-</nav>-->
-
     <!-- Navbar -->
     <div class="top">
       <div class="bar theme-d2 left-align">
@@ -79,18 +63,37 @@
           class="bar-item button hide-small hover-gold right"
           >EN</a
         >
-        <a href="#contact" class="bar-item button hide-small hover-gold right"
+        <a href="#contact" class="bar-item button hover-gold hide-small right"
           >Contact</a
         >
       </div>
-
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="bar-block theme-d2 hide hide-large hide-medium"
-      ></div>
     </div>
-
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/index-en.html" class="bar-item button">EN</a>
+    </div>
     <!-- Image Header -->
     <div class="display-container animate-opacity">
       <img
@@ -375,11 +378,11 @@
           </p>
           <p>
             <i class="fa fa-phone text-green xlarge"></i>
-            <a href="tel:+15148832315" style="color:#000">1-514-883-2315</a>
+            <a href="tel:+15148832315" style="color: #000">1-514-883-2315</a>
           </p>
           <p>
             <i class="fa fa-envelope-o text-green xlarge"></i>
-            <a href="mailto:infovintageoasis@gmail.com" style="color:#000"
+            <a href="mailto:infovintageoasis@gmail.com" style="color: #000"
               >infovintageoasis@gmail.com</a
             >
           </p>
@@ -398,26 +401,6 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <!--
-  <div class="col m7">
-    <form class="container card-4 padding-16 gold" action="/action_page.php" target="_blank">
-    <div class="section">      
-      <label>Name</label>
-      <input class="input" type="text" name="Name" required>
-    </div>
-    <div class="section">      
-      <label>Email</label>
-      <input class="input" type="text" name="Email" required>
-    </div>
-    <div class="section">      
-      <label>Message</label>
-      <input class="input" type="text" name="Message" required>
-    </div>  
-    <input class="check" type="checkbox" checked name="Like">
-    <label>I Like it!</label>
-    <button type="submit" class="button right theme">Send</button>
-    </form>
-  </div>-->
       </div>
     </div>
 
@@ -452,5 +435,16 @@
         ></a>
       </div>
     </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
   </body>
 </html>
