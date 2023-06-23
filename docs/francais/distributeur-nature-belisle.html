@@ -1,95 +1,224 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm École</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="distributeur">  
-  <!-- Navbar -->
-  <div class="top">
-   <div class="bar theme-d2 left-align">
-    <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="\index.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Accueil</a>
-    <div class="dropdown-hover hide-small">
-      <button class=" button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content card-4 bar-block">
-        <a href="/docs/francais/ecole.html" class=" button hover-gold">École</a>
-        <a href="/docs/francais/pension.html" class=" button hover-gold">Pension</a>
-        <a href="/docs/francais/vente.html" class=" button hover-gold">Vente</a>
-        <a href="/docs/francais/entrainement.html" class=" button hover-gold">Entrainement</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="distributeur">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="\index.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Accueil</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class=" button hover-gold" title="equitation">
+            Équitation <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/francais/ecole.html" class=" button hover-gold"
+              >École</a
+            >
+            <a href="/docs/francais/pension.html" class=" button hover-gold"
+              >Pension</a
+            >
+            <a href="/docs/francais/vente.html" class=" button hover-gold"
+              >Vente</a
+            >
+            <a
+              href="/docs/francais/entrainement.html"
+              class=" button hover-gold"
+              >Entrainement</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/francais/evenements.html"
+          class="bar-item button hide-small hover-gold"
+          >Évènements</a
+        >
+        <a
+          href="/docs/francais/zootherapie.html"
+          class="bar-item button hide-small hover-gold"
+          >Zoothérapie</a
+        >
+        <a
+          href="/docs/francais/distributeur-nature-belisle.html"
+          class=" green bar-item button hide-small hover-gold"
+          >Distributeur Nature Bélisle</a
+        >
+        <a
+          href="/docs/english/distributor-nature-belisle.html"
+          class="bar-item button hide-small hover-gold right"
+          >EN</a
+        >
+        <a
+          href="\index.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
       </div>
     </div>
-    <a href="/docs/francais/evenements.html" class="bar-item button hide-small hover-gold">Évènements</a>
-    <a href="/docs/francais/zootherapie.html" class="bar-item button hide-small hover-gold">Zoothérapie</a>
-    <a href="/docs/francais/distributeur-nature-belisle.html" class=" green bar-item button hide-small hover-gold">Distributeur Nature Bélisle</a>
-    <a href="/docs/english/distributor-nature-belisle.html" class="bar-item button hide-small hover-gold right">EN</a>
-    <a href="\index.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
-   </div>
-  </div>
-  <!-- Navbar on small screens -->
-  <div  id="navDemo"  class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%">
-  <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-  <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-  <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
-  <a href="/docs/francais/entrainement.html" class="bar-item button">Entrainement</a>
-  <a href="/docs/francais/evenements.html" class="bar-item button">Évènements</a>
-  <a href="/docs/francais/zootherapie.html" class="bar-item button">Zoothérapie</a>
-  <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button green">Distributeur Nature Bélisle</a>
-  <a href="\index.html#contact" class="bar-item button">Contact</a>
-  <a href="/docs/english/distributor-nature-belisle.html" class="bar-item button">EN</a>
-</div>
-  <!-- Image Header -->
-  <div class="collage center display-container animate-opacity" style="padding-top: 50px">
-    <img class="image" alt="" src="/docs/images/naturebelisle/logo-Belisle-Solution-Nutrition-2021-Couleur.jpg" style="max-height: 500px; min-height:350px; max-width: 500px;padding-bottom: 4px;">
-    <img class="image" alt="" src="/docs/images/naturebelisle/Logo-LiberteFR.png" style="max-height: 500px;min-height: 350px; max-width: 500px; padding-bottom: 4px;">
-  </div>
-<!--distributeur nature container-->
-<div class="container padding-64 ">
-  <about class="justify">
-    <h1 class="center">Distribution Vintage Oasis</h1>
-    <p>La Ferme Vintage Oasis est distributeur des produits Nature Belisle dans la région de St-Jean-Sur-Richelieu pour répondre à tous les besoins nutritionnels de vos chevaux, animaux de compagnie ou de bassecour.</p>
-    <p>Pour voir la gamme de produits Nature Belisle veuillez visiter leur site web (lien en bas de la page).</p>
-
-  <!--Contact Belisle-->
-  <div class="row left">
-    <h5>Pour toutes commandes ou questions veuillez communiquer avec nous.</h5>
-    <p style="padding-left: 4.5%;padding-bottom:0%"><i class="fa fa-phone text-black xlarge"></i>  1-514-883-2315</p>
-    <p style="padding-left: 4.5%;padding-bottom:0%"><i class="fa fa-envelope-o text-black xlarge"></i>  <a href="mailto:vintageoasis@naturebelisle.net" style="color:#000">vintageoasis@naturebelisle.net</a></p>
-    <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%;" href="https://www.facebook.com/" title="FacebookDistributionsVintageOasis"><i class="fa fa-facebook-official xlarge" style="padding-right: 4%;"></i>Distribution Vintage Oasis</a></p>
-    <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;" href="https://www.naturebelisle.net" target="_blank" title="naturebelisleweb"><i class="fa fa-info-circle xlarge" style="padding-right: 4%;"></i>naturebelisle.net</a></p>
-</div>
-</about>
-</div>
-
-<!-- Footer -->
-<footer class="container padding-32 theme-d1">
-  <div style="position:relative;max-width: 300px;" class="tooltip left">
-    <img src="/docs/images/logo-white-no-text.png">
-  </div>
-    <div class="center" style="position:relative; left: -7.5%;">
-      <h3 >Retrouvez-nous sur les réseaux sociaux</h4>
-        <a class="button xxlarge" href="https://www.facebook.com/vintageoasisfarm/" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a class="button xxlarge" href="https://www.instagram.com/ferme.vintage.oasis.farm/" title="Instagram"><i class="fa fa-instagram"></i></a>  
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button green"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="\index.html#contact" class="bar-item button">Contact</a>
+      <a
+        href="/docs/english/distributor-nature-belisle.html"
+        class="bar-item button"
+        >EN</a
+      >
     </div>
-    <div style="position:relative;bottom:155px;z-index:1;" class="tooltip right">
-      <a class="button theme" href="#distributeur"><span class="xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
+    <!-- Image Header -->
+    <div
+      class="collage center display-container animate-opacity"
+      style="padding-top: 50px"
+    >
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/naturebelisle/logo-Belisle-Solution-Nutrition-2021-Couleur.jpg"
+        style="max-height: 500px; min-height:350px; max-width: 500px;padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/naturebelisle/Logo-LiberteFR.png"
+        style="max-height: 500px;min-height: 350px; max-width: 500px; padding-bottom: 4px;"
+      />
     </div>
-</footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <!--distributeur nature container-->
+    <div class="container padding-64 ">
+      <about class="justify">
+        <h1 class="center">Distribution Vintage Oasis</h1>
+        <p>
+          La Ferme Vintage Oasis est distributeur des produits Nature Belisle
+          dans la région de St-Jean-Sur-Richelieu pour répondre à tous les
+          besoins nutritionnels de vos chevaux, animaux de compagnie ou de
+          bassecour.
+        </p>
+        <p>
+          Pour voir la gamme de produits Nature Belisle veuillez visiter leur
+          site web (lien en bas de la page).
+        </p>
+
+        <!--Contact Belisle-->
+        <div class="row left">
+          <h5>
+            Pour toutes commandes ou questions veuillez communiquer avec nous.
+          </h5>
+          <p style="padding-left: 4.5%;padding-bottom:0%">
+            <i class="fa fa-phone text-black xlarge"></i> 1-514-883-2315
+          </p>
+          <p style="padding-left: 4.5%;padding-bottom:0%">
+            <i class="fa fa-envelope-o text-black xlarge"></i>
+            <a href="mailto:vintageoasis@naturebelisle.net" style="color:#000"
+              >vintageoasis@naturebelisle.net</a
+            >
+          </p>
+          <p>
+            <a
+              class="button large "
+              style="padding-left:5%;padding-right: 4%; padding-top: 0%;"
+              href="https://www.facebook.com/"
+              title="FacebookDistributionsVintageOasis"
+              ><i
+                class="fa fa-facebook-official xlarge"
+                style="padding-right: 4%;"
+              ></i
+              >Distribution Vintage Oasis</a
+            >
+          </p>
+          <p>
+            <a
+              class="button large "
+              style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;"
+              href="https://www.naturebelisle.net"
+              target="_blank"
+              title="naturebelisleweb"
+              ><i
+                class="fa fa-info-circle xlarge"
+                style="padding-right: 4%;"
+              ></i
+              >naturebelisle.net</a
+            >
+          </p>
+        </div>
+      </about>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container padding-32 theme-d1">
+      <div style="position:relative;max-width: 300px;" class="tooltip left">
+        <img src="/docs/images/logo-white-no-text.png" />
+      </div>
+      <div class="center" style="position:relative; left: -7.5%;">
+        <h3>Retrouvez-nous sur les réseaux sociaux</h3>
+        <a
+          class="button xxlarge"
+          href="https://www.facebook.com/vintageoasisfarm/"
+          title="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="button xxlarge"
+          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
+          title="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div
+        style="position:relative;bottom:155px;z-index:1;"
+        class="tooltip right"
+      >
+        <a class="button theme" href="#distributeur"
+          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
