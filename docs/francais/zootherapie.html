@@ -1,132 +1,288 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm École</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="zootherapie">
-  <!-- Navbar -->
-  <div class="top">
-   <div class="bar theme-d2 left-align">
-    <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="\index.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Accueil</a>
-    <div class="dropdown-hover hide-small">
-      <button class=" button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content card-4 bar-block">
-        <a href="/docs/francais/ecole.html" class=" button hover-gold">École</a>
-        <a href="/docs/francais/pension.html" class=" button hover-gold">Pension</a>
-        <a href="/docs/francais/vente.html" class=" button hover-gold">Vente</a>
-        <a href="/docs/francais/entrainement.html" class=" button hover-gold">Entrainement</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="zootherapie">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="\index.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Accueil</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class=" button hover-gold" title="equitation">
+            Équitation <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/francais/ecole.html" class=" button hover-gold"
+              >École</a
+            >
+            <a href="/docs/francais/pension.html" class=" button hover-gold"
+              >Pension</a
+            >
+            <a href="/docs/francais/vente.html" class=" button hover-gold"
+              >Vente</a
+            >
+            <a
+              href="/docs/francais/entrainement.html"
+              class=" button hover-gold"
+              >Entrainement</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/francais/evenements.html"
+          class="bar-item button hide-small hover-gold"
+          >Évènements</a
+        >
+        <a
+          href="/docs/francais/zootherapie.html"
+          class=" green bar-item button hide-small hover-gold"
+          >Zoothérapie</a
+        >
+        <a
+          href="/docs/francais/distributeur-nature-belisle.html"
+          class="bar-item button hide-small hover-gold"
+          >Distributeur Nature Bélisle</a
+        >
+        <a
+          href="/docs/english/zootherapy.html"
+          class="bar-item button hide-small hover-gold right"
+          >EN</a
+        >
+        <a
+          href="\index.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
       </div>
     </div>
-    <a href="/docs/francais/evenements.html" class="bar-item button hide-small hover-gold">Évènements</a>
-    <a href="/docs/francais/zootherapie.html" class=" green bar-item button hide-small hover-gold">Zoothérapie</a>
-    <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button hide-small hover-gold">Distributeur Nature Bélisle</a>
-    <a href="/docs/english/zootherapy.html" class="bar-item button hide-small hover-gold right">EN</a>
-    <a href="\index.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
-   </div>
-  </div>
-  <!-- Navbar on small screens -->
-  <div
-  id="navDemo"
-  class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%">
-  <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-  <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-  <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
-  <a href="/docs/francais/entrainement.html" class="bar-item button">Entrainement</a>
-  <a href="/docs/francais/evenements.html" class="bar-item button">Évènements</a>
-  <a href="/docs/francais/zootherapie.html" class="bar-item button green">Zoothérapie</a>
-  <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button">Distributeur Nature Bélisle</a>
-  <a href="\index.html#contact" class="bar-item button">Contact</a>
-  <a href="/docs/english/zootherapy.html" class="bar-item button">EN</a>
-</div>
-  <!--Zootherapie Container-->
-  <div class="container padding-64 theme-l5">
-    <about class="justify">
-      <h1 class="center">Zoothérapie</h1>
-      <h5>La zoothérapie c'est quoi?</h5>
-      <p>Une thérapie non conventionnelle mais de plus en plus reconnue par le corps médical, la zoothérapie est là pour rester. L'animal, quel qu'il soit, est sans jugement et devient le facilitateur dans la relation, favorisant l'ouverture vers l'atteinte des objectifs. La zoothérapie est basée sur l'acceptation et la bienveillance et ce, durant tout le processus. </p>
-      <h5>Pour qui?</h5>
-      <p>Toute personne ayant un trouble cognitif, affectif ou social tel que : TSA, Tourette, déficience intellectuelle, trouble du comportement, trouble de l'attachement, enfant en retard de développement, démence, ainsi que le trouble de stress post-traumatique.</p>
-      <h5>Service</h5>
-      <p>Nous offrons du suivi individuel ou de groupe.</p>
-      <h5>Démarche</h5>
-      <p>Un plan est d'abord mis en place pour chaque client, qu'il soit enfant, adolescent ou adulte avec des objectifs à court, moyen et long terme selon les besoins. Si le client a déjà un plan d'intervention, il est possible de poursuivre dans la même direction et/ou de modifier les objectifs déjà établis au besoin. </p>
-      <p>Un rapport est émis suite à chacune des rencontres pour assurer un suivi de l'évolution du client au fil du temps. Pour certains défis, une réévaluation est nécessaire quelques fois par années pour nous permettre de toujours être à jour dans l'évolution de notre client.</p>
-    </about>
-  </div>
-<!-- Intervenants Container -->
-<div class="container padding-64 center" id="intervenants">
-  <h2>Nos Intervenants</h2>
-  <div class="row"><br>
-  
-  <div class="center">
-  <img src="/docs/images/zoohautrichelieu.jpg" alt="zoothérapie haut richelieu" style="width:15%" class="circle hover-opacity">
-  <h3>Amélie Tétreault</h3>
-  <h5>Zoothérapeute</h5>
-  </div>
-  <about class="justify">
-    <p>Propriétaire de Zoothérapie du Haut-Richelieu, depuis septembre 2019, Amélie est éducatrice à l'enfance de formation.  Ensuite, elle à été formée chez Zoothérapie Québec et, cumulant diverses formations en lien avec la petite enfance. Amélie se passionne pour l'intervention auprès des enfants, depuis maintenant plus de 14 ans et diversifie au fils des années son type de clientèle. Elle pratique principalement auprès d'une clientèle vivant de l'anxiété ou un trauma, ainsi elle les aide à vivre des réussites et à atteindre leur objectif. </p>
-  <p>En mai 2017 Amélie obtient son diplôme en zoothérapie via Zoothérapie Québec. Ensuite elle entame une série de formation, afin de se perfectionner et intervenir avec une clientèle variée. </p>
-  <p>Grande passionner des animaux, ses partenaires de zoothérapie sont les chiens, chats, lapin ainsi que les chevaux, auprès desquelles elle excelle dans sa pratique. Elle est autant confortable en contexte de séance de groupe ou individuel. </p>
-  <p>Attentionner, débrouillarde, respectueuse, dynamique, à l'écoute et ricaneuse décrive bien cette jeune entrepreneure, prête à vous accompagner dans l'atteinte de vos buts. </p>
-  <h6>Formations :</h6>
-  <ul>
-    <li>AEC Éducation à l'enfance, 2009</li>
-    <li>Zoothérapie Québec, mai 2017</li>
-    <li>Pratique légale et professionnelle loi 21, 2018</li>
-    <li>Congrès de zoothérapie, 2018</li>
-    <li>Psychologie et comportement du chien, 2019</li>
-    <li>Télépratique, 2020</li>
-    <li>Stress toxiques et stratégies d'intervention, 2021</li>
-    <li>Trauma complexe, 2021</li>
-    <li>Régulation des émotions, 2021</li>
-    <li>Toxicomanie, concept de base et repérage, 2021</li>
-    <li>Deuil de son partenaire de zoothérapie, 2021</li>
-    <li>L'intervention auprès des personnes en deuil, 2022</li>
-    <li>Symposium de zoothérapie (intervention auprès de clientèle adulte), 2022</li>
-    <li>Trouble anxieux (en cours)</li>
-    <li>TDAH et trouble de comportement (en cours)</li>
-  </ul>
-  <!--Contact Zootherapie-->
-  <div class="row left">
-      <h5>Pour plus d'information, contactez Zoothérapie du Haut Richelieu</h5>
-      <p style="padding-left: 4.5%;padding-bottom:0%"><i class="fa fa-phone text-black xlarge"></i>  <a href="tel:+14388880574" style="color:#000">1-438-888-0574</a></p>
-      <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;" href="https://www.zootherapiehr.com" target="_blank" title="zoo-HR-web"><i class="fa fa-info-circle xlarge" style="padding-right: 4%;"></i>zootherapiehr.com</a></p>
-      <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%;" href="https://www.facebook.com/zootherapieHR" target="_blank" title="FacebookZooHR"><i class="fa fa-facebook-official xlarge" style="padding-right: 4%;"></i>Zoothérapie du Haut-Richelieu</a></p>
-  </div>
-  </about>
-  </div>
-</div>
-<!-- Footer -->
-<footer class="container padding-32 theme-d1">
-  <div style="position:relative;max-width: 300px;" class="tooltip left">
-    <img src="/docs/images/logo-white-no-text.png">
-  </div>
-    <div class="center" style="position:relative; left: -7.5%;">
-      <h3 >Retrouvez-nous sur les réseaux sociaux</h4>
-        <a class="button xxlarge" href="https://www.facebook.com/vintageoasisfarm/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a class="button xxlarge" href="https://www.instagram.com/ferme.vintage.oasis.farm/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>  
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button green"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="\index.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/zootherapy.html" class="bar-item button">EN</a>
     </div>
-    <div style="position:relative;bottom:155px;z-index:1;" class="tooltip right">
-      <a class="button theme" href="#zootherapie"><span class="xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
+    <!--Zootherapie Container-->
+    <div class="container padding-64 theme-l5">
+      <about class="justify">
+        <h1 class="center">Zoothérapie</h1>
+        <h5>La zoothérapie c'est quoi?</h5>
+        <p>
+          Une thérapie non conventionnelle mais de plus en plus reconnue par le
+          corps médical, la zoothérapie est là pour rester. L'animal, quel qu'il
+          soit, est sans jugement et devient le facilitateur dans la relation,
+          favorisant l'ouverture vers l'atteinte des objectifs. La zoothérapie
+          est basée sur l'acceptation et la bienveillance et ce, durant tout le
+          processus.
+        </p>
+        <h5>Pour qui?</h5>
+        <p>
+          Toute personne ayant un trouble cognitif, affectif ou social tel que :
+          TSA, Tourette, déficience intellectuelle, trouble du comportement,
+          trouble de l'attachement, enfant en retard de développement, démence,
+          ainsi que le trouble de stress post-traumatique.
+        </p>
+        <h5>Service</h5>
+        <p>Nous offrons du suivi individuel ou de groupe.</p>
+        <h5>Démarche</h5>
+        <p>
+          Un plan est d'abord mis en place pour chaque client, qu'il soit
+          enfant, adolescent ou adulte avec des objectifs à court, moyen et long
+          terme selon les besoins. Si le client a déjà un plan d'intervention,
+          il est possible de poursuivre dans la même direction et/ou de modifier
+          les objectifs déjà établis au besoin.
+        </p>
+        <p>
+          Un rapport est émis suite à chacune des rencontres pour assurer un
+          suivi de l'évolution du client au fil du temps. Pour certains défis,
+          une réévaluation est nécessaire quelques fois par années pour nous
+          permettre de toujours être à jour dans l'évolution de notre client.
+        </p>
+      </about>
     </div>
-</footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <!-- Intervenants Container -->
+    <div class="container padding-64 center" id="intervenants">
+      <h2>Nos Intervenants</h2>
+      <div class="row">
+        <br />
+
+        <div class="center">
+          <img
+            src="/docs/images/zoohautrichelieu.jpg"
+            alt="zoothérapie haut richelieu"
+            style="width:15%"
+            class="circle hover-opacity"
+          />
+          <h3>Amélie Tétreault</h3>
+          <h5>Zoothérapeute</h5>
+        </div>
+        <about class="justify">
+          <p>
+            Propriétaire de Zoothérapie du Haut-Richelieu, depuis septembre
+            2019, Amélie est éducatrice à l'enfance de formation. Ensuite, elle
+            à été formée chez Zoothérapie Québec et, cumulant diverses
+            formations en lien avec la petite enfance. Amélie se passionne pour
+            l'intervention auprès des enfants, depuis maintenant plus de 14 ans
+            et diversifie au fils des années son type de clientèle. Elle
+            pratique principalement auprès d'une clientèle vivant de l'anxiété
+            ou un trauma, ainsi elle les aide à vivre des réussites et à
+            atteindre leur objectif.
+          </p>
+          <p>
+            En mai 2017 Amélie obtient son diplôme en zoothérapie via
+            Zoothérapie Québec. Ensuite elle entame une série de formation, afin
+            de se perfectionner et intervenir avec une clientèle variée.
+          </p>
+          <p>
+            Grande passionner des animaux, ses partenaires de zoothérapie sont
+            les chiens, chats, lapin ainsi que les chevaux, auprès desquelles
+            elle excelle dans sa pratique. Elle est autant confortable en
+            contexte de séance de groupe ou individuel.
+          </p>
+          <p>
+            Attentionner, débrouillarde, respectueuse, dynamique, à l'écoute et
+            ricaneuse décrive bien cette jeune entrepreneure, prête à vous
+            accompagner dans l'atteinte de vos buts.
+          </p>
+          <h6>Formations :</h6>
+          <ul>
+            <li>AEC Éducation à l'enfance, 2009</li>
+            <li>Zoothérapie Québec, mai 2017</li>
+            <li>Pratique légale et professionnelle loi 21, 2018</li>
+            <li>Congrès de zoothérapie, 2018</li>
+            <li>Psychologie et comportement du chien, 2019</li>
+            <li>Télépratique, 2020</li>
+            <li>Stress toxiques et stratégies d'intervention, 2021</li>
+            <li>Trauma complexe, 2021</li>
+            <li>Régulation des émotions, 2021</li>
+            <li>Toxicomanie, concept de base et repérage, 2021</li>
+            <li>Deuil de son partenaire de zoothérapie, 2021</li>
+            <li>L'intervention auprès des personnes en deuil, 2022</li>
+            <li>
+              Symposium de zoothérapie (intervention auprès de clientèle
+              adulte), 2022
+            </li>
+            <li>Trouble anxieux (en cours)</li>
+            <li>TDAH et trouble de comportement (en cours)</li>
+          </ul>
+          <!--Contact Zootherapie-->
+          <div class="row left">
+            <h5>
+              Pour plus d'information, contactez Zoothérapie du Haut Richelieu
+            </h5>
+            <p style="padding-left: 4.5%;padding-bottom:0%">
+              <i class="fa fa-phone text-black xlarge"></i>
+              <a href="tel:+14388880574" style="color:#000">1-438-888-0574</a>
+            </p>
+            <p>
+              <a
+                class="button large "
+                style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;"
+                href="https://www.zootherapiehr.com"
+                target="_blank"
+                title="zoo-HR-web"
+                ><i
+                  class="fa fa-info-circle xlarge"
+                  style="padding-right: 4%;"
+                ></i
+                >zootherapiehr.com</a
+              >
+            </p>
+            <p>
+              <a
+                class="button large "
+                style="padding-left:5%;padding-right: 4%; padding-top: 0%;"
+                href="https://www.facebook.com/zootherapieHR"
+                target="_blank"
+                title="FacebookZooHR"
+                ><i
+                  class="fa fa-facebook-official xlarge"
+                  style="padding-right: 4%;"
+                ></i
+                >Zoothérapie du Haut-Richelieu</a
+              >
+            </p>
+          </div>
+        </about>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container padding-32 theme-d1">
+      <div
+        style="position: relative; max-width: 300px;"
+        class="tooltip left hide-small"
+      >
+        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
+      </div>
+      <div class="center" style="position: relative; left: -7.5%">
+        <h3 class="hide-small">Retrouvez-nous sur les réseaux sociaux</h3>
+        <a
+          class="button xxlarge"
+          href="https://www.facebook.com/vintageoasisfarm/"
+          target="_blank"
+          title="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="button xxlarge"
+          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
+          target="_blank"
+          title="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div style="position: relative; z-index: 1" class="tooltip right">
+        <a class="button theme" href="#accueil"
+          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>

@@ -1,119 +1,242 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm École</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="evenements">
-  <!-- Navbar -->
-  <div class="top">
-   <div class="bar theme-d2 left-align">
-    <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="\index.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Accueil</a>
-    <div class="dropdown-hover hide-small">
-      <button class=" button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content card-4 bar-block">
-        <a href="/docs/francais/ecole.html" class=" button hover-gold">École</a>
-        <a href="/docs/francais/pension.html" class=" button hover-gold">Pension</a>
-        <a href="/docs/francais/vente.html" class=" button hover-gold">Vente</a>
-        <a href="/docs/francais/entrainement.html" class=" button hover-gold">Entrainement</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="evenements">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="\index.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Accueil</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class=" button hover-gold" title="equitation">
+            Équitation <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/francais/ecole.html" class=" button hover-gold"
+              >École</a
+            >
+            <a href="/docs/francais/pension.html" class=" button hover-gold"
+              >Pension</a
+            >
+            <a href="/docs/francais/vente.html" class=" button hover-gold"
+              >Vente</a
+            >
+            <a
+              href="/docs/francais/entrainement.html"
+              class=" button hover-gold"
+              >Entrainement</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/francais/evenements.html"
+          class=" green bar-item button hide-small hover-gold"
+          >Évènements</a
+        >
+        <a
+          href="/docs/francais/zootherapie.html"
+          class="bar-item button hide-small hover-gold"
+          >Zoothérapie</a
+        >
+        <a
+          href="/docs/francais/distributeur-nature-belisle.html"
+          class="bar-item button hide-small hover-gold"
+          >Distributeur Nature Bélisle</a
+        >
+        <a
+          href="/docs/english/events.html"
+          class="bar-item button hide-small hover-gold right"
+          >EN</a
+        >
+        <a
+          href="\index.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
       </div>
     </div>
-    <a href="/docs/francais/evenements.html" class=" green bar-item button hide-small hover-gold">Évènements</a>
-    <a href="/docs/francais/zootherapie.html" class="bar-item button hide-small hover-gold">Zoothérapie</a>
-    <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button hide-small hover-gold">Distributeur Nature Bélisle</a>
-    <a href="/docs/english/events.html" class="bar-item button hide-small hover-gold right">EN</a>
-    <a href="\index.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
-   </div>
-  </div>
-  <!-- Navbar on small screens -->
-  <div
-  id="navDemo"
-  class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%"
->
-  <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-  <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-  <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
-  <a href="/docs/francais/entrainement.html" class="bar-item button"
-    >Entrainement</a
-  >
-  <a href="/docs/francais/evenements.html" class="bar-item button green"
-    >Évènements</a
-  >
-  <a href="/docs/francais/zootherapie.html" class="bar-item button"
-    >Zoothérapie</a
-  >
-  <a
-    href="/docs/francais/distributeur-nature-belisle.html"
-    class="bar-item button"
-    >Distributeur Nature Bélisle</a
-  >
-  <a href="\index.html#contact" class="bar-item button">Contact</a>
-  <a href="/docs/english/events.html" class="bar-item button">EN</a>
-</div>
-<!-- General Events Container -->
-<div class="container padding-64 ">
-  <about class="justify">
-      <h1 class="center ">Évènements à venir</h1>
-      <h5>Vous trouverez ci-dessous les cliniques et ateliers à venir organisés par la Ferme Vintage Oasis. Si vous êtes intéressé à participer à l'une de nos cliniques ou ateliers, n'hésitez pas à nous contacter pour l'inscription, les tarifs ou toute autre demande.</h5>
-  </about>
-  </div>
-  <!-- Current Event Container -->
-  <div class="container padding-64 center" id="intervenants">
-      <div class="row"><br>
-      
-      <div class="center">
-      <img src="/docs/images/evenements/equilibre.jpg" alt="zoothérapie haut richelieu" style="width:15%" class=" hover-opacity">
-      <h3>1er et 2 juillet - Initiation à la Zoothérapie</h3>
-      <h3>avec le Centre de Service Équilibre</h3>
-      </div>
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button green"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="\index.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/events.html" class="bar-item button">EN</a>
+    </div>
+    <!-- General Events Container -->
+    <div class="container padding-64 ">
       <about class="justify">
-          <p>Initiation a la zoothérapie?</p>
-          <p>Vous aimeriez en savoir plus sur la zoothérapie ou étudier dans ce domaine?</p>
-          <p>Alors notre formation “ Initiation à la zoothérapie “ est faite pour vous !</p>
-          <p>L'atelier se déroule sur 2 journées complètes de perfectionnement qui vous aideront à développer ces habiletés et vivre ces deux journées en tant que zootherapeutes d'un jour. </p>
-          <p>Cette formation vous donne une attestation de réussite et le préalable pour vous inscrire à notre programme de formation. </p>
-          <p>Ces deux jours ont lieu ici, à la Ferme Vintage Oasis à St- Jean sur Richelieu de 9h à 16h.</p>
-          <p>Le tarif régulier est de 299$ plus taxes mais un rabais de 50$ est applicable à l’inscription.</p>
-   <!--Contact Zootherapie-->
-    <div class="row left">
-      <h5>Pour en savoir plus ou vous inscrire, contactez le Centre de Services Équilibre</h5>
-      <p style="padding-left: 4.5%;padding-bottom:0%"><i class="fa fa-envelope-o text-black xlarge"></i>  <a href=mailto:info@centre-equilibre.ca style="color:#000">info@centre-equilibre.ca</a></p>
-      <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;" href="https://www.centre-equilibre.ca" target="_blank" title="centre-equilibre-web"><i class="fa fa-info-circle xlarge" style="padding-right: 4%;"></i>centre-equilibre.ca</a></p>
-      <p><a class="button large " style="padding-left:5%;padding-right: 4%; padding-top: 0%;" href="https://www.facebook.com/zootherapieequilibre" target="_blank" title="FacebookZooEquilibre"><i class="fa fa-facebook-official xlarge" style="padding-right: 4%;"></i>Centre de Services Équilibre</a></p>
-  </div>
+        <h1 class="center ">Évènements à venir</h1>
+        <h5>
+          Vous trouverez ci-dessous les cliniques et ateliers à venir organisés
+          par la Ferme Vintage Oasis. Si vous êtes intéressé à participer à
+          l'une de nos cliniques ou ateliers, n'hésitez pas à nous contacter
+          pour l'inscription, les tarifs ou toute autre demande.
+        </h5>
       </about>
-      </div>
-      </div>
-<!-- Footer -->
-<footer class="container padding-32 theme-d1">
-  <div style="position:relative;max-width: 300px;" class="tooltip left">
-    <img src="/docs/images/logo-white-no-text.png">
-  </div>
-    <div class="center" style="position:relative; left: -7.5%;">
-      <h3 >Retrouvez-nous sur les réseaux sociaux</h4>
-        <a class="button xxlarge" href="https://www.facebook.com/vintageoasisfarm/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a class="button xxlarge" href="https://www.instagram.com/ferme.vintage.oasis.farm/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>  
     </div>
-    <div style="position:relative;bottom:155px;z-index:1;" class="tooltip right">
-      <a class="button theme" href="#evenements"><span class="xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
+    <!-- Current Event Container -->
+    <div class="container padding-64 center" id="intervenants">
+      <div class="row">
+        <br />
+
+        <div class="center">
+          <img
+            src="/docs/images/evenements/equilibre.jpg"
+            alt="zoothérapie haut richelieu"
+            style="width:15%"
+            class=" hover-opacity"
+          />
+          <h3>1er et 2 juillet - Initiation à la Zoothérapie</h3>
+          <h3>avec le Centre de Service Équilibre</h3>
+        </div>
+        <about class="justify">
+          <p>Initiation a la zoothérapie?</p>
+          <p>
+            Vous aimeriez en savoir plus sur la zoothérapie ou étudier dans ce
+            domaine?
+          </p>
+          <p>
+            Alors notre formation “ Initiation à la zoothérapie “ est faite pour
+            vous !
+          </p>
+          <p>
+            L'atelier se déroule sur 2 journées complètes de perfectionnement
+            qui vous aideront à développer ces habiletés et vivre ces deux
+            journées en tant que zootherapeutes d'un jour.
+          </p>
+          <p>
+            Cette formation vous donne une attestation de réussite et le
+            préalable pour vous inscrire à notre programme de formation.
+          </p>
+          <p>
+            Ces deux jours ont lieu ici, à la Ferme Vintage Oasis à St- Jean sur
+            Richelieu de 9h à 16h.
+          </p>
+          <p>
+            Le tarif régulier est de 299$ plus taxes mais un rabais de 50$ est
+            applicable à l’inscription.
+          </p>
+          <!--Contact Zootherapie-->
+          <div class="row left">
+            <h5>
+              Pour en savoir plus ou vous inscrire, contactez le Centre de
+              Services Équilibre
+            </h5>
+            <p style="padding-left: 4.5%;padding-bottom:0%">
+              <i class="fa fa-envelope-o text-black xlarge"></i>
+              <a href="mailto:info@centre-equilibre.ca" style="color:#000"
+                >info@centre-equilibre.ca</a
+              >
+            </p>
+            <p>
+              <a
+                class="button large "
+                style="padding-left:5%;padding-right: 4%; padding-top: 0%; padding-bottom: 0%;"
+                href="https://www.centre-equilibre.ca"
+                target="_blank"
+                title="centre-equilibre-web"
+                ><i
+                  class="fa fa-info-circle xlarge"
+                  style="padding-right: 4%;"
+                ></i
+                >centre-equilibre.ca</a
+              >
+            </p>
+            <p>
+              <a
+                class="button large "
+                style="padding-left:5%;padding-right: 4%; padding-top: 0%;"
+                href="https://www.facebook.com/zootherapieequilibre"
+                target="_blank"
+                title="FacebookZooEquilibre"
+                ><i
+                  class="fa fa-facebook-official xlarge"
+                  style="padding-right: 4%;"
+                ></i
+                >Centre de Services Équilibre</a
+              >
+            </p>
+          </div>
+        </about>
+      </div>
     </div>
-</footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <!-- Footer -->
+    <footer class="container padding-32 theme-d1">
+      <div
+        style="position: relative; max-width: 300px;"
+        class="tooltip left hide-small"
+      >
+        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
+      </div>
+      <div class="center" style="position: relative; left: -7.5%">
+        <h3 class="hide-small">Retrouvez-nous sur les réseaux sociaux</h3>
+        <a
+          class="button xxlarge"
+          href="https://www.facebook.com/vintageoasisfarm/"
+          target="_blank"
+          title="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="button xxlarge"
+          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
+          target="_blank"
+          title="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div style="position: relative; z-index: 1" class="tooltip right">
+        <a class="button theme" href="#accueil"
+          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
