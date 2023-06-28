@@ -1,112 +1,223 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm École</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="ecole">
-  <!-- Navbar -->
-  <div class="top">
-   <div class="bar theme-d2 left-align">
-    <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="\index.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Accueil</a>
-    <div class="dropdown-hover hide-small">
-      <button class=" green button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content card-4 bar-block">
-        <a href="/docs/francais/ecole.html" class=" green button hover-gold">École</a>
-        <a href="/docs/francais/pension.html" class=" button hover-gold">Pension</a>
-        <a href="/docs/francais/vente.html" class=" button hover-gold">Vente</a>
-        <a href="/docs/francais/entrainement.html" class=" button hover-gold">Entrainement</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="ecole">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="\index.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Accueil</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class=" green button hover-gold" title="equitation">
+            Équitation <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/francais/ecole.html" class=" green button hover-gold"
+              >École</a
+            >
+            <a href="/docs/francais/pension.html" class=" button hover-gold"
+              >Pension</a
+            >
+            <a href="/docs/francais/vente.html" class=" button hover-gold"
+              >Vente</a
+            >
+            <a
+              href="/docs/francais/entrainement.html"
+              class=" button hover-gold"
+              >Entrainement</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/francais/evenements.html"
+          class="bar-item button hide-small hover-gold"
+          >Évènements</a
+        >
+        <a
+          href="/docs/francais/zootherapie.html"
+          class="bar-item button hide-small hover-gold"
+          >Zoothérapie</a
+        >
+        <a
+          href="/docs/francais/distributeur-nature-belisle.html"
+          class="bar-item button hide-small hover-gold"
+          >Distributeur Nature Bélisle</a
+        >
+        <a
+          href="/docs/english/school.html"
+          class="bar-item button hide-small hover-gold right"
+          >EN</a
+        >
+        <a
+          href="\index.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
       </div>
     </div>
-    <a href="/docs/francais/evenements.html" class="bar-item button hide-small hover-gold">Évènements</a>
-    <a href="/docs/francais/zootherapie.html" class="bar-item button hide-small hover-gold">Zoothérapie</a>
-    <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button hide-small hover-gold">Distributeur Nature Bélisle</a>
-    <a href="/docs/english/school.html" class="bar-item button hide-small hover-gold right">EN</a>
-    <a href="\index.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
-   </div>
-  </div>
-  <!-- Navbar on small screens -->
-  <div
-  id="navDemo"
-  class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%"
->
-  <a href="/docs/francais/ecole.html" class="bar-item button green">École</a>
-  <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-  <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
-  <a href="/docs/francais/entrainement.html" class="bar-item button"
-    >Entrainement</a
-  >
-  <a href="/docs/francais/evenements.html" class="bar-item button"
-    >Évènements</a
-  >
-  <a href="/docs/francais/zootherapie.html" class="bar-item button"
-    >Zoothérapie</a
-  >
-  <a
-    href="/docs/francais/distributeur-nature-belisle.html"
-    class="bar-item button"
-    >Distributeur Nature Bélisle</a
-  >
-  <a href="\index.html#contact" class="bar-item button">Contact</a>
-  <a href="/docs/english/school.html" class="bar-item button">EN</a>
-</div>
-<!-- Ecole Container -->
-<div class="container padding-64">
-<about class="justify">
-    <h1 class="space center">L'École</h1>
-    <p>Les cours offerts à la Ferme Vintage Oasis sont des cours individuels ou semi privés d'équitation classique pour cavaliers débutants, intermédiaires, et avancés ou pour ceux qui se remettent en selle. Nous proposons également des cours d'équitation avancés pour ceux qui souhaitent élargir leurs connaissances et leurs compétences en équitation, y compris des cours pour les cavaliers qui souhaitent tester leurs compétences lors de concours hippiques en dressage, saut ou concours complet.</p>
-    <p>Lors de son cours, le cavalier apprend les notions essentielles de la monte à cheval aux trois allures, du pansage, de l'anatomie et la préparation du cheval, de l'équipement, de la sécurité et de la régi d'écurie mais également les notions de base de l'écoute et du respect du cheval ainsi que la manipulation au sol.</p>
-    <p>Nous offrons également à nos étudiants(es) la possibilité de prendre une demi-pension avec l'un de nos chevaux d'école. La demi-pension est un engagement de six mois et inclu deux montes libre et un cours par semaine.</p>
-    <h5>Tarifs (taxes en sus)</h5>
-    <ul> 
-        <li>Introduction: 70,00 $</li>
-        <li>Cours individuel: 60,00 $</li>
-        <li>Cours semi-privé: 50,00 $</li>
-        <li>Carte de 10 cours privés: 550,00 $</li>
-        <li>Carte de 10 cours semi-privés: 450,00 $</li>
-        <li>Demi-pension (tarif mensuel): 470,00 $</li>
-    </ul>
-</about>
-</div>
-<!--Picture Collage Container-->
-<div class="collage center">
-  <img class="image" alt="" src="/docs/images/ecole/ecole4.png" style="width: 300px; height: auto; padding-bottom: 4px;">
-  <img class="image" alt="" src="/docs/images/ecole/ecole2.jpg" style="width: 300px; height: auto; padding-bottom: 4px;">
-  <img class="image" alt="" src="/docs/images/ecole/ecole3.jpg" style="width: 300px; height: auto; padding-bottom: 4px;">
-  <img class="image" alt="" src="/docs/images/ecole/ecole1.jpg" style="width: 300px; height: auto; padding-bottom: 4px;">
-  <img class="image" alt="" src="/docs/images/ecole/ecole5.jpg" style="width: 300px; height: auto; padding-bottom: 4px;">
-  <img class="image" alt="" src="/docs/images/ecole/ecole6.jpg" style="width: 300px; height: auto; padding-bottom: 4px;">
-</div>
-<!-- Footer -->
-<footer class="container padding-32 theme-d1">
-  <div style="position:relative;max-width: 300px;" class="tooltip left">
-    <img src="/docs/images/logo-white-no-text.png">
-  </div>
-    <div class="center" style="position:relative; left: -7.5%;">
-      <h3 >Retrouvez-nous sur les réseaux sociaux</h4>
-        <a class="button xxlarge" href="https://www.facebook.com/vintageoasisfarm/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a class="button xxlarge" href="https://www.instagram.com/ferme.vintage.oasis.farm/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>  
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button green"
+        >École</a
+      >
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="\index.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/school.html" class="bar-item button">EN</a>
     </div>
-    <div style="position:relative;bottom:155px;z-index:1;" class="tooltip right">
-      <a class="button theme" href="#ecole"><span class="xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
+    <!-- Ecole Container -->
+    <div class="container padding-64">
+      <about class="justify">
+        <h1 class="space center">L'École</h1>
+        <p>
+          Les cours offerts à la Ferme Vintage Oasis sont des cours individuels
+          ou semi privés d'équitation classique pour cavaliers débutants,
+          intermédiaires, et avancés ou pour ceux qui se remettent en selle.
+          Nous proposons également des cours d'équitation avancés pour ceux qui
+          souhaitent élargir leurs connaissances et leurs compétences en
+          équitation, y compris des cours pour les cavaliers qui souhaitent
+          tester leurs compétences lors de concours hippiques en dressage, saut
+          ou concours complet.
+        </p>
+        <p>
+          Lors de son cours, le cavalier apprend les notions essentielles de la
+          monte à cheval aux trois allures, du pansage, de l'anatomie et la
+          préparation du cheval, de l'équipement, de la sécurité et de la régi
+          d'écurie mais également les notions de base de l'écoute et du respect
+          du cheval ainsi que la manipulation au sol.
+        </p>
+        <p>
+          Nous offrons également à nos étudiants(es) la possibilité de prendre
+          une demi-pension avec l'un de nos chevaux d'école. La demi-pension est
+          un engagement de six mois et inclu deux montes libre et un cours par
+          semaine.
+        </p>
+        <h5>Tarifs (taxes en sus)</h5>
+        <ul>
+          <li>Introduction: 70,00 $</li>
+          <li>Cours individuel: 60,00 $</li>
+          <li>Cours semi-privé: 50,00 $</li>
+          <li>Carte de 10 cours privés: 550,00 $</li>
+          <li>Carte de 10 cours semi-privés: 450,00 $</li>
+          <li>Demi-pension (tarif mensuel): 470,00 $</li>
+        </ul>
+      </about>
     </div>
-</footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <!--Picture Collage Container-->
+    <div class="collage center">
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole4.png"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole2.jpg"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole3.jpg"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole1.jpg"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole5.jpg"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+      <img
+        class="image"
+        alt=""
+        src="/docs/images/ecole/ecole6.jpg"
+        style="width: 300px; height: auto; padding-bottom: 4px;"
+      />
+    </div>
+    <!-- Footer -->
+    <footer class="container padding-32 theme-d1">
+      <div
+        style="position: relative; max-width: 300px;"
+        class="tooltip left hide-small"
+      >
+        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
+      </div>
+      <div class="center" style="position: relative; left: -7.5%">
+        <h3 class="hide-small">Retrouvez-nous sur les réseaux sociaux</h3>
+        <a
+          class="button xxlarge"
+          href="https://www.facebook.com/vintageoasisfarm/"
+          target="_blank"
+          title="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="button xxlarge"
+          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
+          target="_blank"
+          title="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div style="position: relative; z-index: 1" class="tooltip right">
+        <a class="button theme" href="#accueil"
+          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
