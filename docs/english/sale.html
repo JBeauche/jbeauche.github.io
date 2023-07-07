@@ -1,172 +1,328 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm For Sale</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="sale">
-<!-- Navbar -->
-<div class="top">
-    <div class="bar theme-d2 left-align">
-     <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-     <a href="/docs/english/index-en.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Home</a>
-     <div class="dropdown-hover hide-small">
-       <button class=" green button hover-gold" title="equitation">Equestrian<i class="fa fa-caret-down"></i></button>
-       <div class="dropdown-content card-4 bar-block">
-         <a href="/docs/english/school.html" class=" button hover-gold">Riding School</a>
-         <a href="/docs/english/boarding.html" class=" button hover-gold">Boarding</a>
-         <a href="/docs/english/sale.html" class=" green button hover-gold">For Sale</a>
-         <a href="/docs/english/training.html" class=" button hover-gold">Training</a>
-       </div>
-     </div>
-     <a href="/docs/english/events.html" class="bar-item button hide-small hover-gold">Events</a>
-     <a href="/docs/english/zootherapy.html" class="bar-item button hide-small hover-gold">Zootherapy</a>
-     <a href="/docs/english/distributor-nature-belisle.html" class="bar-item button hide-small hover-gold">Nature Bélisle Distributor</a>
-     <a href="/docs/english/equineproducts.html" class="bar-item button hide-small hover-gold">Equine Products</a>
-     <a href="/docs/francais/vente.html" class="bar-item button hide-small hover-gold right">FR</a>
-     <a href="/docs/english/index-en.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="sale">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="/docs/english/index-en.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Home</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class="green button hover-gold" title="equitation">
+            Equestrian<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/english/school.html" class="button hover-gold"
+              >Riding School</a
+            >
+            <a href="/docs/english/boarding.html" class="button hover-gold"
+              >Boarding</a
+            >
+            <a href="/docs/english/sale.html" class="green button hover-gold"
+              >For Sale</a
+            >
+            <a href="/docs/english/training.html" class="button hover-gold"
+              >Training</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/english/events.html"
+          class="bar-item button hide-small hover-gold"
+          >Events</a
+        >
+        <a
+          href="/docs/english/zootherapy.html"
+          class="bar-item button hide-small hover-gold"
+          >Zootherapy</a
+        >
+        <a
+          href="/docs/english/distributor-nature-belisle.html"
+          class="bar-item button hide-small hover-gold"
+          >Nature Bélisle Distributor</a
+        >
+        <a
+          href="/docs/english/equineproducts.html"
+          class="bar-item button hide-small hover-gold"
+          >Equine Products</a
+        >
+        <a
+          href="/docs/francais/vente.html"
+          class="bar-item button hide-small hover-gold right"
+          >FR</a
+        >
+        <a
+          href="/docs/english/index-en.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
+      </div>
     </div>
-  </div>
-      <!-- Navbar on small screens -->
-      <div
+    <!-- Navbar on small screens -->
+    <div
       id="navDemo"
-      class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%">
-      <a href="/docs/english/school.html" class="bar-item button">Riding School</a>
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/english/school.html" class="bar-item button"
+        >Riding School</a
+      >
       <a href="/docs/english/boarding.html" class="bar-item button">Boarding</a>
-      <a href="/docs/english/sale.html" class="bar-item button green">For Sale</a>
+      <a href="/docs/english/sale.html" class="bar-item button green"
+        >For Sale</a
+      >
       <a href="/docs/english/training.html" class="bar-item button">Training</a>
       <a href="/docs/english/events.html" class="bar-item button">Events</a>
-      <a href="/docs/english/zootherapy.html" class="bar-item button">Zootherapy</a>
-      <a href="/docs/english/distributor-nature-belisle.html" class="bar-item button">Nature Bélisle Distributor</a>
-      <a href="/docs/english/equineproducts.html" class="bar-item button">Equine Products</a>
-      <a href="/docs/english/index-en.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/zootherapy.html" class="bar-item button"
+        >Zootherapy</a
+      >
+      <a
+        href="/docs/english/distributor-nature-belisle.html"
+        class="bar-item button"
+        >Nature Bélisle Distributor</a
+      >
+      <a href="/docs/english/equineproducts.html" class="bar-item button"
+        >Equine Products</a
+      >
+      <a href="/docs/english/index-en.html#contact" class="bar-item button"
+        >Contact</a
+      >
       <a href="/docs/francais/vente.html" class="bar-item button">FR</a>
     </div>
-<!-- Sale Container -->
-<div class="container padding-64">
-<about class="justify">
-    <h1 class="space center">For Sale</h1>
-    <p>The horses available for sale come from our breeding program. Our breeding program aims to breed and train top-quality Warmbloods. Vintage Oasis Farm is committed to producing athletic horses with great working minds and conformation. We only choose stallions that complement the conformation and abilities of our mares to obtain versatile sport horses in all disciplines of English riding.</p>
-    <p>Our horse starting and training program focuses on listening to the horse and on their physical development by paying special attention to equine biomechanics. Our aim is that each of our horses obtains flexible, powerful, and balanced movements; giving our horses all the necessary tools so that they can perform in their discipline.
-    </p>
-    <p>Each of our horses is up to date on vaccination, farrier, and dewormer.</p>  
-</about>
-</div>
-  <!--A Vendre Chevaux Container-->
-  <div class="container padding-16 center" id="installations">
-    <h2>Available For Sale</h2>
+    <!-- Sale Container -->
+    <div class="container padding-64">
+      <about class="justify">
+        <h1 class="space center">For Sale</h1>
+        <p>
+          The horses available for sale come from our breeding program. Our
+          breeding program aims to breed and train top-quality Warmbloods.
+          Vintage Oasis Farm is committed to producing athletic horses with
+          great working minds and conformation. We only choose stallions that
+          complement the conformation and abilities of our mares to obtain
+          versatile sport horses in all disciplines of English riding.
+        </p>
+        <p>
+          Our horse starting and training program focuses on listening to the
+          horse and on their physical development by paying special attention to
+          equine biomechanics. Our aim is that each of our horses obtains
+          flexible, powerful, and balanced movements; giving our horses all the
+          necessary tools so that they can perform in their discipline.
+        </p>
+        <p>
+          Each of our horses is up to date on vaccination, farrier, and
+          dewormer.
+        </p>
+      </about>
+    </div>
+    <!--A Vendre Chevaux Container-->
+    <div class="container padding-16 center" id="installations">
+      <h2>Available For Sale</h2>
     </div>
     <div class="gallery">
-    <a href="#laurie" class="button">
-      <figure class="image" ><img  alt="laurie" src="/docs/images/vente/laurie.jpg" style="width: 300px; height: auto;">
-        <figcaption>Vintage Laurene<br>
-          <span>2016 - CWHBA</span></figcaption>
-      </figure>
-    </a>
-    <a href="#vimy" class="button"><figure class="image"><img alt="vimy" src="/docs/images/vente/vimy-square.jpg" style="width: 300px; height: auto;">
-      <figcaption>Crête de Vimy VOF<br>
-        <span>2021 - CWHBA</span></figcaption>
-    </figure>
-  </a>
-    <a href="#eclipse" class="button">
-      <figure class="image"><img alt="eclipse" src="/docs/images/vente/eclipse.jpg" style="width: 300px; height: auto;">
-        <figcaption>Diamond Eclipse VOF<br>
-          <span>2021 - CWHBA</span></figcaption>
-      </figure>
-    <a>    
+      <a href="#laurie" class="button">
+        <figure class="image">
+          <img
+            alt="laurie"
+            src="/docs/images/vente/laurie.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Vintage Laurene<br />
+            <span>2016 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#vimy" class="button"
+        ><figure class="image">
+          <img
+            alt="vimy"
+            src="/docs/images/vente/vimy-square.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Crête de Vimy VOF<br />
+            <span>2021 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#eclipse" class="button">
+        <figure class="image">
+          <img
+            alt="eclipse"
+            src="/docs/images/vente/eclipse.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Diamond Eclipse VOF<br />
+            <span>2021 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
     </div>
     <div class="container padding-64" id="laurie">
       <h2 class="center">Vintage Laurene</h2>
       <h4 class="center">2016 CWHBA - Tango Event x Hamlet</h4>
-      <p>"Laurie" is a  correct model with balanced proportions with an attractive appearance. She has a steady and cooperative temperament. This mare moves in balance with suppleness, self-carriage and impulsion. Laurene is careful over jumps with good technique and scope. She has a quick but flowing stride as well as a flashy and beautiful appearance which would make quite the impression in the jumper ring. She is trained over fences and low level dressage.</p>
+      <p>
+        "Laurie" is a correct model with balanced proportions with an attractive
+        appearance. She has a steady and cooperative temperament. This mare
+        moves in balance with suppleness, self-carriage and impulsion. Laurene
+        is careful over jumps with good technique and scope. She has a quick but
+        flowing stride as well as a flashy and beautiful appearance which would
+        make quite the impression in the jumper ring. She is trained over fences
+        and low level dressage.
+      </p>
     </div>
     <div class="container padding-64" id="vimy">
       <h2 class="center">Crête de Vimy VOF</h2>
       <h4 class="center">2021 CWHBA - Maximus VOF x Wilderness Storm</h4>
-      <p>"Vimy" is a correct model with a proportional and uphill build colt. Vimy carries himself with balanced and supple movements, and demontrates great self-carriage. Vimy is intelligent, inquisitive, and his agilitiy and active gaits makes him suitable for the Eventing discipline.</p>
+      <p>
+        "Vimy" is a correct model with a proportional and uphill build colt.
+        Vimy carries himself with balanced and supple movements, and demontrates
+        great self-carriage. Vimy is intelligent, inquisitive, and his agilitiy
+        and active gaits makes him suitable for the Eventing discipline.
+      </p>
     </div>
     <div class="container padding-64" id="eclipse">
       <h2 class="center">Diamond Eclipse VOF</h2>
       <h4 class="center">2021 CWHBA - Maximus VOF x Sligo Bay</h4>
-      <p>"Eclipse" has an strong build, attractive appearance, and moves correctly in balance with suppleness, carrying power and impulsion. She is intelligent, inquisitive, athletic, and courageous. This filly has a calm disposition, leads and trailers well.</p>
+      <p>
+        "Eclipse" has an strong build, attractive appearance, and moves
+        correctly in balance with suppleness, carrying power and impulsion. She
+        is intelligent, inquisitive, athletic, and courageous. This filly has a
+        calm disposition, leads and trailers well.
+      </p>
     </div>
-  <!--Anciens Chevaux Container-->
-  <div class="container padding-16 center" id="installations">
-    <h2>Our Past Horses</h2>
+    <!--Anciens Chevaux Container-->
+    <div class="container padding-16 center" id="installations">
+      <h2>Our Past Horses</h2>
     </div>
     <div class="gallery">
-    
-      <figure class="image"><img alt="la primavera" src="/docs/images/anciens/prima keuring.jpg" style="width: 300px; height: auto;">
-        <figcaption>La Primavera VOF<br>
-          <span>2016 - KWPN-NA</span></figcaption>
+      <figure class="image">
+        <img
+          alt="la primavera"
+          src="/docs/images/anciens/prima keuring.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          La Primavera VOF<br />
+          <span>2016 - KWPN-NA</span>
+        </figcaption>
       </figure>
-    
-      <figure class="image"><img alt="maximus" src="/docs/images/anciens/maximus.png" style="width: 300px; height: auto;">
-        <figcaption>Maximus VOF<br>
-          <span>2017 - KWPN-NA</span></figcaption>
+
+      <figure class="image">
+        <img
+          alt="maximus"
+          src="/docs/images/anciens/maximus.png"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Maximus VOF<br />
+          <span>2017 - KWPN-NA</span>
+        </figcaption>
       </figure>
-      <figure class="image"><img alt="ludwig" src="/docs/images/anciens/ludwig.jpg" style="width: 300px; height: auto;">
-        <figcaption>Ludwig VOF<br>
-          <span>2016 - KWPN-NA</span></figcaption>
+      <figure class="image">
+        <img
+          alt="ludwig"
+          src="/docs/images/anciens/ludwig.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Ludwig VOF<br />
+          <span>2016 - KWPN-NA</span>
+        </figcaption>
       </figure>
-      <figure class="image"><img alt="luciana" src="/docs/images/anciens/luciana.JPG" style="width: 300px; height: auto;">
-        <figcaption>Luciana VOF<br>
-          <span>2018 - Holsteiner</span></figcaption>
+      <figure class="image">
+        <img
+          alt="luciana"
+          src="/docs/images/anciens/luciana.JPG"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Luciana VOF<br />
+          <span>2018 - Holsteiner</span>
+        </figcaption>
       </figure>
-      <figure class="image"><img alt="vintage quartz" src="/docs/images/anciens/quartz-square.jpg" style="width: 300px; height: auto">
-        <figcaption>Vintage Quartz<br>
-          <span>2015 - Canadian Warmblood</span></figcaption>
+      <figure class="image">
+        <img
+          alt="vintage quartz"
+          src="/docs/images/anciens/quartz-square.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Vintage Quartz<br />
+          <span>2015 - Canadian Warmblood</span>
+        </figcaption>
       </figure>
-      <figure class="image"><img alt="vintage carpe diem" src="/docs/images/anciens/carpe-diem.jpg" style="width: 300px; height: auto">
-        <figcaption>Vintage Carpe Diem<br>
-          <span>2014 - Canadian Warmblood</span></figcaption>
+      <figure class="image">
+        <img
+          alt="vintage carpe diem"
+          src="/docs/images/anciens/carpe-diem.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Vintage Carpe Diem<br />
+          <span>2014 - Canadian Warmblood</span>
+        </figcaption>
       </figure>
     </div>
-<!-- Footer -->
-<footer class="container padding-32 theme-d1">
-  <div
-    style="position: relative; max-width: 300px;"
-    class="tooltip left hide-small"
-  >
-    <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
-  </div>
-  <div class="center" style="position: relative; left: -7.5%">
-    <h3 class="hide-small">Follow us on social media</h3>
-    <a
-      class="button xxlarge"
-      href="https://www.facebook.com/vintageoasisfarm/"
-      target="_blank"
-      title="Facebook"
-      ><i class="fa fa-facebook"></i
-    ></a>
-    <a
-      class="button xxlarge"
-      href="https://www.instagram.com/ferme.vintage.oasis.farm/"
-      target="_blank"
-      title="Instagram"
-      ><i class="fa fa-instagram"></i
-    ></a>
-  </div>
-  <div style="position: relative; z-index: 1" class="tooltip right">
-    <a class="button theme" href="#sale"
-      ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
-    ></a>
-  </div>
-</footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <!-- Footer -->
+    <footer class="container padding-32 theme-d1">
+      <div
+        style="position: relative; max-width: 300px"
+        class="tooltip left hide-small"
+      >
+        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
+      </div>
+      <div class="center" style="position: relative; left: -7.5%">
+        <h3 class="hide-small">Follow us on social media</h3>
+        <a
+          class="button xxlarge"
+          href="https://www.facebook.com/vintageoasisfarm/"
+          target="_blank"
+          title="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="button xxlarge"
+          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
+          target="_blank"
+          title="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <div style="position: relative; z-index: 1" class="tooltip right">
+        <a class="button theme" href="#sale"
+          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
