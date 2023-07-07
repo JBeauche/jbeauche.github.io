@@ -23,7 +23,9 @@ html {
 body {
   margin: 0;
 }
-
+br {
+  padding-bottom: 5px;
+}
 p {
   padding-bottom: 5px;
 }
@@ -216,6 +218,9 @@ summary {
 .hover-gold:hover {
   color: #000 !important;
   background-color: #c48d45 !important;
+}
+.hover-text-gold:hover {
+  color: #c48d45 !important;
 }
 .xlarge {
   font-size: 24px !important;
@@ -518,6 +523,9 @@ button,
 .bottombar {
   border-bottom: 6px solid #255636 !important;
   border-bottom-color: rgb(204, 204, 204);
+}
+.x-large {
+  font-size: 18px;
 }
 .xlarge {
   font-size: 24px !important;
