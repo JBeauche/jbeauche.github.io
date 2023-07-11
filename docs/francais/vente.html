@@ -1,135 +1,320 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ferme Vintage Oasis Farm Vente</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="\style.css">
-</head>
-<body id="vente">
-  <!-- Navbar -->
-  <div class="top">
-   <div class="bar theme-d2 left-align">
-    <a class="bar-item button hide-medium hide-large right hover-gold theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="\index.html" class="bar-item button hover-gold"><i class="fa fa-home margin-right"></i>Accueil</a>
-    <div class="dropdown-hover hide-small">
-      <button class=" green button hover-gold" title="equitation">Équitation <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content card-4 bar-block">
-        <a href="/docs/francais/ecole.html" class=" button hover-gold">École</a>
-        <a href="/docs/francais/pension.html" class=" button hover-gold">Pension</a>
-        <a href="/docs/francais/vente.html" class=" green button hover-gold">Vente</a>
-        <a href="/docs/francais/entrainement.html" class=" button hover-gold">Entrainement</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+  <body id="vente">
+    <!-- Navbar -->
+    <div class="top">
+      <div class="bar theme-d2 left-align">
+        <a
+          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="\index.html" class="bar-item button hover-gold"
+          ><i class="fa fa-home margin-right"></i>Accueil</a
+        >
+        <div class="dropdown-hover hide-small">
+          <button class="green button hover-gold" title="equitation">
+            Équitation <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content card-4 bar-block">
+            <a href="/docs/francais/ecole.html" class="button hover-gold"
+              >École</a
+            >
+            <a href="/docs/francais/pension.html" class="button hover-gold"
+              >Pension</a
+            >
+            <a href="/docs/francais/vente.html" class="green button hover-gold"
+              >Vente</a
+            >
+            <a href="/docs/francais/entrainement.html" class="button hover-gold"
+              >Entrainement</a
+            >
+          </div>
+        </div>
+        <a
+          href="/docs/francais/evenements.html"
+          class="bar-item button hide-small hover-gold"
+          >Évènements</a
+        >
+        <a
+          href="/docs/francais/zootherapie.html"
+          class="bar-item button hide-small hover-gold"
+          >Zoothérapie</a
+        >
+        <a
+          href="/docs/francais/distributeur-nature-belisle.html"
+          class="bar-item button hide-small hover-gold"
+          >Distributeur Nature Bélisle</a
+        >
+        <a
+          href="/docs/francais/produitsequestres.html"
+          class="bar-item button hide-small hover-gold"
+          >Produits Équestres</a
+        >
+        <a
+          href="/docs/english/sale.html"
+          class="bar-item button hide-small hover-gold right"
+          >EN</a
+        >
+        <a
+          href="\index.html#contact"
+          class="bar-item button hide-small hover-gold right"
+          >Contact</a
+        >
       </div>
     </div>
-    <a href="/docs/francais/evenements.html" class="bar-item button hide-small hover-gold">Évènements</a>
-    <a href="/docs/francais/zootherapie.html" class="bar-item button hide-small hover-gold">Zoothérapie</a>
-    <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button hide-small hover-gold">Distributeur Nature Bélisle</a>
-    <a href="/docs/francais/produitsequestres.html" class="bar-item button hide-small hover-gold">Produits Équestres</a>
-    <a href="/docs/english/sale.html" class="bar-item button hide-small hover-gold right">EN</a>
-    <a href="\index.html#contact" class="bar-item button hide-small hover-gold right">Contact</a>
-   </div>
-  </div>
-  <!-- Navbar on small screens -->
-  <div
-  id="navDemo"
-  class="bar-block theme-d2 hide hide-large hide-medium show" style="padding-top: 10%">
-  <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-  <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-  <a href="/docs/francais/vente.html" class="bar-item button green">Vente</a>
-  <a href="/docs/francais/entrainement.html" class="bar-item button">Entrainement</a>
-  <a href="/docs/francais/evenements.html" class="bar-item button">Évènements</a>
-  <a href="/docs/francais/zootherapie.html" class="bar-item button">Zoothérapie</a>
-  <a href="/docs/francais/distributeur-nature-belisle.html" class="bar-item button">Distributeur Nature Bélisle</a>
-  <a href="/docs/francais/produitsequestres.html" class="bar-item button">Produits Équestres</a>
-  <a href="\index.html#contact" class="bar-item button">Contact</a>
-  <a href="/docs/english/sale.html" class="bar-item button">EN</a>
-</div>
-<!--A Vendre Container-->
-  <div class="container padding-64">
-    <about>
-      <h1 class="space center">À Vendre</h1>
-      <p>Les chevaux disponibles à la vente sont issus de notre élevage. L'objectif de notre programme d'élevage est d'élever et d'entrainer des Warmbloods de qualité supérieure. La Ferme Vintage Oasis s'engage à produire des chevaux athlétiques avec un esprit de travail et une conformation exceptionnelle. Nous ne choisissons que des étalons qui complémentent la conformation et les habiletés de nos juments afin d'obtenir des chevaux de sport polyvalents dans toutes les disciplines de l'équitation classique. </p>
-      <p>Notre programme de débourrage et d'entrainement est axé sur l'écoute du cheval. Nous utilisons plusieurs méthodes élogiques, tel que la méthode de Tellington. Nous portons également une attention particulière à la biomécanique équine afin que chacun de nos chevaux obtiennent des mouvements souples, puissants et équilibrés; donnant à nos chevaux tous les outils nécessaires afin qu'ils puissent performer dans leur discipline.</p>
-      <p>Chacun de nos chevaux sont vaccinés, parés et vermifugés.</p>
-      <p>Contactez-nous pour plus d'informations à propos de nos chevaux en vente.</p>
-    </about>
-  </div>
-  <!--A Vendre Chevaux Container-->
-<div class="container padding-16 center" id="avendre">
-  <h2>Disponible à la vente</h2>
-  </div>
-  <div class="gallery">
-  <a href="#laurie" class="button">
-    <figure class="image" ><img  alt="laurie" src="/docs/images/vente/laurie.jpg" style="width: 300px; height: auto;">
-      <figcaption>Vintage Laurene<br>
-        <span>2016 - CWHBA</span></figcaption>
-    </figure>
-  </a>
-  <a href="#vimy" class="button"><figure class="image"><img alt="vimy" src="/docs/images/vente/vimy-square.jpg" style="width: 300px; height: auto;">
-    <figcaption>Crête de Vimy VOF<br>
-      <span>2021 - CWHBA</span></figcaption>
-  </figure>
-</a>
-  <a href="#eclipse" class="button">
-    <figure class="image"><img alt="eclipse" src="/docs/images/vente/eclipse.jpg" style="width: 300px; height: auto;">
-      <figcaption>Diamond Eclipse VOF<br>
-        <span>2021 - CWHBA</span></figcaption>
-    </figure>
-  <a>    
-  </div>
-  <div class="container padding-64" id="laurie">
-    <h2 class="center">Vintage Laurene</h2>
-    <h4 class="center">2016 CWHBA - Tango Event x Hamlet</h4>
-    <p>"Laurie" est une jument possédant un joli modèle et un tempérament coopératif. Elle est appliquée et se déplace avec souplesse et impulsion. Sa technique et son respect des barres, ses foulées longues et fluides ainsi que son physique gracieux en font une jument parfaite pour les épreuves de saut. Elle saute des petits parcours et elle est entrainée en dressage basse école.</p>
-  </div>
-  <div class="container padding-64" id="vimy">
-    <h2 class="center">Crête de Vimy VOF</h2>
-    <h4 class="center">2021 CWHBA - Maximus VOF x Wilderness Storm</h4>
-    <p>"Vimy" est un hongre agile et athlétique qui se déplace avec souplesse et légèreté. Il est intelligent, curieux et calme. Ses origines en endurance et dressage laisse supposer qu'il sera un excellent cheval de concours complet. Il est présentement manipulé quotidiennement, donne les pieds et se laisse aisément mener.</p>
-  </div>
-  <div class="container padding-64" id="eclipse">
-    <h2 class="center">Diamond Eclipse VOF</h2>
-    <h4 class="center">2021 CWHBA - Maximus VOF x Sligo Bay</h4>
-    <p>"Eclipse" est une pouliche bien bâtie, possédant un joli modèle et une locomotion souple et aérienne. Elle est intelligente, curieuse, calme et courageuse. Elle est présentement manipulée quotidiennement, donne les pieds et se laisse aisément mener.</p>
-  </div>
-<!--Anciens Chevaux Container-->
-<div class="container padding-16 center" id="anciens">
-  <h2>Nos Anciens Chevaux</h2>
-  </div>
-  <div class="gallery">
-  
-    <figure class="image"><img alt="la primavera" src="/docs/images/anciens/prima keuring.jpg" style="width: 300px; height: auto;">
-      <figcaption>La Primavera VOF<br>
-        <span>2016 - KWPN-NA</span></figcaption>
-    </figure>
-  
-    <figure class="image"><img alt="maximus" src="/docs/images/anciens/maximus.png" style="width: 300px; height: auto;">
-      <figcaption>Maximus VOF<br>
-        <span>2017 - KWPN-NA</span></figcaption>
-    </figure>
-    <figure class="image"><img alt="ludwig" src="/docs/images/anciens/ludwig.jpg" style="width: 300px; height: auto;">
-      <figcaption>Ludwig VOF<br>
-        <span>2016 - KWPN-NA</span></figcaption>
-    </figure>
-    <figure class="image"><img alt="luciana" src="/docs/images/anciens/luciana.JPG" style="width: 300px; height: auto;">
-      <figcaption>Luciana VOF<br>
-        <span>2018 - Holsteiner</span></figcaption>
-    </figure>
-    <figure class="image"><img alt="vintage quartz" src="/docs/images/anciens/quartz-square.jpg" style="width: 300px; height: auto">
-      <figcaption>Vintage Quartz<br>
-        <span>2015 - Canadian Warmblood</span></figcaption>
-    </figure>
-    <figure class="image"><img alt="vintage carpe diem" src="/docs/images/anciens/carpe-diem.jpg" style="width: 300px; height: auto">
-      <figcaption>Vintage Carpe Diem<br>
-        <span>2014 - Canadian Warmblood</span></figcaption>
-    </figure>
-  </div>
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="bar-block theme-d2 hide hide-large hide-medium show"
+      style="padding-top: 10%"
+    >
+      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
+      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
+      <a href="/docs/francais/vente.html" class="bar-item button green"
+        >Vente</a
+      >
+      <a href="/docs/francais/entrainement.html" class="bar-item button"
+        >Entrainement</a
+      >
+      <a href="/docs/francais/evenements.html" class="bar-item button"
+        >Évènements</a
+      >
+      <a href="/docs/francais/zootherapie.html" class="bar-item button"
+        >Zoothérapie</a
+      >
+      <a
+        href="/docs/francais/distributeur-nature-belisle.html"
+        class="bar-item button"
+        >Distributeur Nature Bélisle</a
+      >
+      <a href="/docs/francais/produitsequestres.html" class="bar-item button"
+        >Produits Équestres</a
+      >
+      <a href="\index.html#contact" class="bar-item button">Contact</a>
+      <a href="/docs/english/sale.html" class="bar-item button">EN</a>
+    </div>
+    <!--A Vendre Container-->
+    <div class="container padding-64">
+      <about>
+        <h1 class="space center">À Vendre</h1>
+        <p>
+          Les chevaux disponibles à la vente sont issus de notre élevage.
+          L'objectif de notre programme d'élevage est d'élever et d'entrainer
+          des Warmbloods de qualité supérieure. La Ferme Vintage Oasis s'engage
+          à produire des chevaux athlétiques avec un esprit de travail et une
+          conformation exceptionnelle. Nous ne choisissons que des étalons qui
+          complémentent la conformation et les habiletés de nos juments afin
+          d'obtenir des chevaux de sport polyvalents dans toutes les disciplines
+          de l'équitation classique.
+        </p>
+        <p>
+          Notre programme de débourrage et d'entrainement est axé sur l'écoute
+          du cheval. Nous utilisons plusieurs méthodes élogiques, tel que la
+          méthode de Tellington. Nous portons également une attention
+          particulière à la biomécanique équine afin que chacun de nos chevaux
+          obtiennent des mouvements souples, puissants et équilibrés; donnant à
+          nos chevaux tous les outils nécessaires afin qu'ils puissent performer
+          dans leur discipline.
+        </p>
+        <p>Chacun de nos chevaux sont vaccinés, parés et vermifugés.</p>
+        <p>
+          Contactez-nous pour plus d'informations à propos de nos chevaux en
+          vente.
+        </p>
+      </about>
+    </div>
+    <!--A Vendre Chevaux Container-->
+    <div class="container padding-16 center" id="avendre">
+      <h2>Disponible à la vente</h2>
+    </div>
+    <div class="gallery hide-small">
+      <a href="#laurie" class="button">
+        <figure class="image">
+          <img
+            alt="laurie"
+            src="/docs/images/vente/laurie.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Vintage Laurene<br />
+            <span>2016 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#vimy" class="button"
+        ><figure class="image">
+          <img
+            alt="vimy"
+            src="/docs/images/vente/vimy-square.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Crête de Vimy VOF<br />
+            <span>2021 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#eclipse" class="button">
+        <figure class="image">
+          <img
+            alt="eclipse"
+            src="/docs/images/vente/eclipse.jpg"
+            style="width: 300px; height: auto"
+          />
+          <figcaption>
+            Diamond Eclipse VOF<br />
+            <span>2021 - CWHBA</span>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="container padding-64" id="laurie">
+      <div class="center">
+        <h2>Vintage Laurene</h2>
+        <h4>2016 CWHBA - Tango Event x Hamlet</h4>
+        <img
+          alt="laurie"
+          src="/docs/images/vente/laurie.jpg"
+          style="width: 300px; height: auto"
+          class="hide-large hide-medium"
+        />
+      </div>
+      <p>
+        "Laurie" est une jument possédant un joli modèle et un tempérament
+        coopératif. Elle est appliquée et se déplace avec souplesse et
+        impulsion. Sa technique et son respect des barres, ses foulées longues
+        et fluides ainsi que son physique gracieux en font une jument parfaite
+        pour les épreuves de saut. Elle saute des petits parcours et elle est
+        entrainée en dressage basse école.
+      </p>
+    </div>
+    <div class="container padding-64" id="vimy">
+      <div class="center">
+        <h2>Crête de Vimy VOF</h2>
+        <h4>2021 CWHBA - Maximus VOF x Wilderness Storm</h4>
+        <img
+          alt="vimy"
+          src="/docs/images/vente/vimy-square.jpg"
+          style="width: 300px; height: auto"
+          class="hide-large hide-medium"
+        />
+      </div>
+      <p>
+        "Vimy" est un hongre agile et athlétique qui se déplace avec souplesse
+        et légèreté. Il est intelligent, curieux et calme. Ses origines en
+        endurance et dressage laisse supposer qu'il sera un excellent cheval de
+        concours complet. Il est présentement manipulé quotidiennement, donne
+        les pieds et se laisse aisément mener.
+      </p>
+    </div>
+    <div class="container padding-64" id="eclipse">
+      <div class="center">
+        <h2>Diamond Eclipse VOF</h2>
+        <h4>2021 CWHBA - Maximus VOF x Sligo Bay</h4>
+        <img
+          alt="eclipse"
+          src="/docs/images/vente/eclipse.jpg"
+          style="width: 300px; height: auto"
+          class="center hide-large hide-medium"
+        />
+      </div>
+      <p>
+        "Eclipse" est une pouliche bien bâtie, possédant un joli modèle et une
+        locomotion souple et aérienne. Elle est intelligente, curieuse, calme et
+        courageuse. Elle est présentement manipulée quotidiennement, donne les
+        pieds et se laisse aisément mener.
+      </p>
+    </div>
+    <!--Anciens Chevaux Container-->
+    <div class="container padding-16 center" id="anciens">
+      <h2>Nos Anciens Chevaux</h2>
+    </div>
+    <div class="gallery">
+      <figure class="image">
+        <img
+          alt="la primavera"
+          src="/docs/images/anciens/prima keuring.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          La Primavera VOF<br />
+          <span>2016 - KWPN-NA</span>
+        </figcaption>
+      </figure>
+
+      <figure class="image">
+        <img
+          alt="maximus"
+          src="/docs/images/anciens/maximus.png"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Maximus VOF<br />
+          <span>2017 - KWPN-NA</span>
+        </figcaption>
+      </figure>
+      <figure class="image">
+        <img
+          alt="ludwig"
+          src="/docs/images/anciens/ludwig.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Ludwig VOF<br />
+          <span>2016 - KWPN-NA</span>
+        </figcaption>
+      </figure>
+      <figure class="image">
+        <img
+          alt="luciana"
+          src="/docs/images/anciens/luciana.JPG"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Luciana VOF<br />
+          <span>2018 - Holsteiner</span>
+        </figcaption>
+      </figure>
+      <figure class="image">
+        <img
+          alt="vintage quartz"
+          src="/docs/images/anciens/quartz-square.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Vintage Quartz<br />
+          <span>2015 - Canadian Warmblood</span>
+        </figcaption>
+      </figure>
+      <figure class="image">
+        <img
+          alt="vintage carpe diem"
+          src="/docs/images/anciens/carpe-diem.jpg"
+          style="width: 300px; height: auto"
+        />
+        <figcaption>
+          Vintage Carpe Diem<br />
+          <span>2014 - Canadian Warmblood</span>
+        </figcaption>
+      </figure>
+    </div>
     <!-- Footer -->
     <footer class="container padding-32 theme-d1">
       <div
-        style="position: relative; max-width: 300px;"
+        style="position: relative; max-width: 300px"
         class="tooltip left hide-small"
       >
         <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
@@ -157,16 +342,16 @@
         ></a>
       </div>
     </footer>
-<script>
-  // Used to toggle the menu on smaller screens when clicking on the menu button
-  function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-</script>
-</body>
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+        } else {
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
