@@ -114,8 +114,11 @@
           >Initiation à la Zoothérapie <br />
           22 et 23 juillet</a
         > -->
-        <a class="button x-large hover-text-gold" href="#lynda"
+        <a class="button x-large hover-text-gold" onclick="getEvent('lynda')"
           >Clinique avec Lynda Trenholme<br />19 et 20 août</a
+        >
+        <a class="button x-large hover-text-gold" onclick="getEvent('hyde')"
+          >Clinique avec Hyde Moffatt<br />28 et 29 octobre</a
         >
       </div>
     </div>
@@ -211,7 +214,7 @@
       </div>
     </div> -->
     <!--Lynda Trenholme Container-->
-    <div class="container padding-64" id="lynda">
+    <div class="container padding-64 none" id="lynda">
       <div class="center">
         <img
           src="/docs/images/evenements/lynda.jpg"
@@ -298,6 +301,21 @@
         </a>
       </div>
     </div>
+    <!--Hyde Moffatt Container-->
+    <div class="container padding-64 none" id="hyde">
+      <div class="center">
+        <img
+          src="/docs/images/evenements/"
+          alt="hyde moffatt"
+          style="width: 45%; max-width: 350px"
+          class="circle"
+        />
+        <h3>Clinique avec Hyde Moffatt<br />28 et 29 octobre</h3>
+      </div>
+      <div class="justify">
+        <h4>Information à venir.</h4>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="container padding-32 theme-d1">
       <div
@@ -329,16 +347,6 @@
         ></a>
       </div>
     </footer>
-    <script>
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
-      }
-    </script>
+    <script src="\script.js"></script>
   </body>
 </html>
