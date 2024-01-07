@@ -3,7 +3,3 @@
 [Vintage Oasis Farm](#vof-web) -[Team Members](#teammembers)
 
 This project's goal is to create a website for Vintage Oasis Farm.
-
-## Team Members
-
-- Jessica Beauchemin, @JBeauche (Team Leader)
