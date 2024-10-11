@@ -10,97 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="\style.css" />
+    <script src="\navbar-fr.js" defer></script>
+    <script src="\footer-fr.js" defer></script>
+    <script>
+      window.addEventListener("load", function() {
+        loadNavbarFr();
+      });
+
+      window.addEventListener("load", function() {
+        loadFooterFr();
+      });
+    </script>
   </head>
   <body id="vente">
     <!-- Navbar -->
-    <div class="top">
-      <div class="bar theme-d2 left-align">
-        <a
-          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
-          href="javascript:void(0);"
-          onclick="openNav()"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a href="\index.html" class="bar-item button hover-gold"
-          ><i class="fa fa-home margin-right"></i>Accueil</a
-        >
-        <div class="dropdown-hover hide-small">
-          <button class="green button hover-gold" title="equitation">
-            Équitation <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content card-4 bar-block">
-            <a href="/docs/francais/ecole.html" class="button hover-gold"
-              >École</a
-            >
-            <a href="/docs/francais/pension.html" class="button hover-gold"
-              >Pension</a
-            >
-            <a href="/docs/francais/vente.html" class="green button hover-gold"
-              >Vente</a
-            >
-            <a href="/docs/francais/entrainement.html" class="button hover-gold"
-              >Entrainement</a
-            >
-          </div>
-        </div>
-        <a
-          href="/docs/francais/evenements.html"
-          class="bar-item button hide-small hover-gold"
-          >Évènements</a
-        >
-        <a
-          href="/docs/francais/zootherapie.html"
-          class="bar-item button hide-small hover-gold"
-          >Zoothérapie</a
-        >
-        <a
-          href="/docs/francais/produitsequestres.html"
-          class="bar-item button hide-small hover-gold"
-          >Produits Équestres</a
-        >
-        <a
-          href="/docs/english/sale.html"
-          class="bar-item button hide-small hover-gold right"
-          >EN</a
-        >
-        <a
-          href="\index.html#contact"
-          class="bar-item button hide-small hover-gold right"
-          >Contact</a
-        >
-      </div>
-    </div>
-    <!-- Navbar on small screens -->
-    <div
-      id="navDemo"
-      class="bar-block theme-d2 hide hide-large hide-medium show"
-      style="padding-top: 10%"
-    >
-      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-      <a href="/docs/francais/vente.html" class="bar-item button green"
-        >Vente</a
-      >
-      <a href="/docs/francais/entrainement.html" class="bar-item button"
-        >Entrainement</a
-      >
-      <a href="/docs/francais/evenements.html" class="bar-item button"
-        >Évènements</a
-      >
-      <a href="/docs/francais/zootherapie.html" class="bar-item button"
-        >Zoothérapie</a
-      >
-      <a
-        href="/docs/francais/distributeur-nature-belisle.html"
-        class="bar-item button"
-        >Distributeur Nature Bélisle</a
-      >
-      <a href="/docs/francais/produitsequestres.html" class="bar-item button"
-        >Produits Équestres</a
-      >
-      <a href="\index.html#contact" class="bar-item button">Contact</a>
-      <a href="/docs/english/sale.html" class="bar-item button">EN</a>
-    </div>
+    <div id="navbar-fr"></div>
     <!--A Vendre Container-->
     <div class="container padding-64">
       <about>
@@ -287,46 +211,6 @@
       </figure>
     </div>
     <!-- Footer -->
-    <footer class="container padding-32 theme-d1">
-      <div
-        style="position: relative; max-width: 300px"
-        class="tooltip left hide-small"
-      >
-        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
-      </div>
-      <div class="center" style="position: relative; left: -7.5%">
-        <h3 class="hide-small">Retrouvez-nous sur les réseaux sociaux</h3>
-        <a
-          class="button xxlarge"
-          href="https://www.facebook.com/vintageoasisfarm/"
-          target="_blank"
-          title="Facebook"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a
-          class="button xxlarge"
-          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
-          target="_blank"
-          title="Instagram"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
-      <div style="position: relative; z-index: 1" class="tooltip right">
-        <a class="button theme" href="#vente"
-          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
-        ></a>
-      </div>
-    </footer>
-    <script>
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
-      }
-    </script>
+    <div id="footer-fr"></div>
   </body>
 </html>

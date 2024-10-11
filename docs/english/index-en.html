@@ -10,96 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="\style.css" />
-  </head>
+    <script src="\navbar.js" defer></script>
+    <script src="\footer.js" defer></script>
+    <script>
+      window.addEventListener("load", function() {
+        loadNavbar();
+      });
 
+      window.addEventListener("load", function() {
+        loadFooter();
+      });
+    </script>
+  </head>
   <body id="home">
     <!-- Navbar -->
-    <div class="top">
-      <div class="bar theme-d2 left-align">
-        <a
-          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
-          href="javascript:void(0);"
-          onclick="openNav()"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="/docs/english/index-en.html"
-          class="bar-item button green hover-gold"
-          ><i class="fa fa-home margin-right"></i>Home</a
-        >
-        <div class="dropdown-hover hide-small">
-          <button class="button hover-gold" title="equitation">
-            Equestrian<i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content card-4 bar-block">
-            <a href="/docs/english/school.html" class="button hover-gold"
-              >Riding School</a
-            >
-            <a href="/docs/english/boarding.html" class="button hover-gold"
-              >Boarding</a
-            >
-            <a href="/docs/english/sale.html" class="button hover-gold"
-              >For Sale</a
-            >
-            <a href="/docs/english/training.html" class="button hover-gold"
-              >Training</a
-            >
-          </div>
-        </div>
-        <a
-          href="/docs/english/events.html"
-          class="bar-item button hide-small hover-gold"
-          >Events</a
-        >
-        <a
-          href="/docs/english/zootherapy.html"
-          class="bar-item button hide-small hover-gold"
-          >Zootherapy</a
-        >
-        <a
-          href="/docs/english/equineproducts.html"
-          class="bar-item button hide-small hover-gold"
-          >Equine Products</a
-        >
-        <a
-          href="\index.html"
-          class="bar-item button hide-small hover-gold right"
-          >FR</a
-        >
-        <a href="#contact" class="bar-item button hide-small hover-gold right"
-          >Contact</a
-        >
-      </div>
-    </div>
-    <!-- Navbar on small screens -->
-    <div
-      id="navDemo"
-      class="bar-block theme-d2 hide hide-large hide-medium show"
-      style="padding-top: 10%"
-    >
-      <a href="/docs/english/school.html" class="bar-item button"
-        >Riding School</a
-      >
-      <a href="/docs/english/boarding.html" class="bar-item button">Boarding</a>
-      <a href="/docs/english/sale.html" class="bar-item button">For Sale</a>
-      <a href="/docs/english/training.html" class="bar-item button">Training</a>
-      <a href="/docs/english/events.html" class="bar-item button">Events</a>
-      <a href="/docs/english/zootherapy.html" class="bar-item button"
-        >Zootherapy</a
-      >
-      <a
-        href="/docs/english/distributor-nature-belisle.html"
-        class="bar-item button"
-        >Nature Bélisle Distributor</a
-      >
-      <a href="/docs/english/equineproducts.html" class="bar-item button"
-        >Equine Products</a
-      >
-      <a href="/docs/english/index-en.html#contact" class="bar-item button"
-        >Contact</a
-      >
-      <a href="\index.html" class="bar-item button">FR</a>
-    </div>
+    <div id="navbar"></div>
     <!-- Image Header Banner -->
     <div class="center display-container animate-opacity hide-small">
       <img
@@ -210,7 +135,7 @@
           </div>
         </div>
 
-        <div class="quarter">
+        <div class="two-columns">
           <img
             src="/docs/images/jessica1.png"
             alt="jessica beauchemin"
@@ -243,7 +168,7 @@
           </p>
         </div>
 
-        <div class="quarter">
+        <div class="two-columns">
           <img
             src="/docs/images/claudie.jpg"
             alt="claudie charland"
@@ -253,49 +178,6 @@
           <h3>Claudie Charland</h3>
           <h5>Dressage/Hunter/Jumper Coach</h5>
           <p class="justify"></p>
-        </div>
-
-        <div class="quarter">
-          <img
-            src="/docs/images/maya.jpg"
-            alt="maya gulin"
-            style="width: 45%"
-            class="circle hover-opacity"
-          />
-          <h3>Maya Gulin</h3>
-          <h5>Hunter/Jumper Coach</h5>
-          <p class="justify">
-            Maya has a diverse background working horses starting from a young
-            age while living in Khartoum, Sudan with rescue cart horses and
-            horses saved from the track. Upon returning to Canada, she spent her
-            junior years competing successfully in hunters and jumpers.
-          </p>
-          <p class="justify">
-            Taking a break for university, she graduated from Emily Carr
-            University of Art and Design from the Film Video and Integrated
-            media program. She returned to horses and spent three seasons as
-            head wrangler and barn manager at Big Bar Guest Ranch in the Cariboo
-            region of British Columbia – retraining and fitnessing horses from
-            often difficult pasts. She used her inquisitive nature to instill
-            confidence in horses and riders, finding a passion for creating
-            strong relationships between them. She focuses on creating trust
-            between horse and rider, and strengthening intuitional ways of
-            communicating while building confident riding skills.
-          </p>
-          <p class="justify">
-            She has experience coaching beginner to intermediate students in
-            both English (flatwork and jumping) and Western, using fun exercises
-            to reinforce solid connection and natural, forward-thinking form –
-            with an emphasis on correct posture and movement through the body.
-          </p>
-          <p class="justify">
-            She lives in Montreal where she is a painter, a writer, and
-            experiments with filmmaking. Her paintings have been shown in
-            galleries across Canada and her films in collaboration with her
-            filmmaking partner have been screened in various film festivals. She
-            enjoys traveling, going on adventures, concerts, and life in
-            general!
-          </p>
         </div>
       </div>
     </div>
@@ -450,46 +332,6 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="container padding-32 theme-d1">
-      <div
-        style="position: relative; max-width: 300px"
-        class="tooltip left hide-small"
-      >
-        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
-      </div>
-      <div class="center" style="position: relative; left: -7.5%">
-        <h3 class="hide-small">Follow us on social media</h3>
-        <a
-          class="button xxlarge"
-          href="https://www.facebook.com/vintageoasisfarm/"
-          target="_blank"
-          title="Facebook"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a
-          class="button xxlarge"
-          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
-          target="_blank"
-          title="Instagram"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
-      <div style="position: relative; z-index: 1" class="tooltip right">
-        <a class="button theme" href="#home"
-          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
-        ></a>
-      </div>
-    </footer>
-    <script>
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
-      }
-    </script>
+    <div id="footer"></div>
   </body>
 </html>

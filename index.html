@@ -10,93 +10,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="navbar-fr.js" defer></script>
+    <script src="footer-fr.js" defer></script>
+    <script>
+      window.addEventListener("load", function() {
+        loadNavbarFr();
+      });
+
+      window.addEventListener("load", function() {
+        loadFooterFr();
+      });
+    </script>
   </head>
   <body id="accueil">
     <!-- Navbar -->
-    <div class="top">
-      <div class="bar theme-d2 left-align">
-        <a
-          class="bar-item button hide-medium hide-large right hover-gold theme-d2"
-          href="javascript:void(0);"
-          onclick="openNav()"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a href="#accueil" class="bar-item button green hover-gold"
-          ><i class="fa fa-home margin-right"></i>Accueil</a
-        >
-        <div class="dropdown-hover hide-small">
-          <button class="button hover-gold" title="equitation">
-            Équitation <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content card-4 bar-block">
-            <a href="/docs/francais/ecole.html" class="button hover-gold"
-              >École</a
-            >
-            <a href="/docs/francais/pension.html" class="button hover-gold"
-              >Pension</a
-            >
-            <a href="/docs/francais/vente.html" class="button hover-gold"
-              >Vente</a
-            >
-            <a href="/docs/francais/entrainement.html" class="button hover-gold"
-              >Entrainement</a
-            >
-          </div>
-        </div>
-        <a
-          href="/docs/francais/evenements.html"
-          class="bar-item button hide-small hover-gold"
-          >Évènements</a
-        >
-        <a
-          href="/docs/francais/zootherapie.html"
-          class="bar-item button hide-small hover-gold"
-          >Zoothérapie</a
-        >
-        <a
-          href="/docs/francais/produitsequestres.html"
-          class="bar-item button hide-small hover-gold"
-          >Produits Équestres</a
-        >
-        <a
-          href="/docs/english/index-en.html"
-          class="bar-item button hide-small hover-gold right"
-          >EN</a
-        >
-        <a href="#contact" class="bar-item button hover-gold hide-small right"
-          >Contact</a
-        >
-      </div>
-    </div>
-    <!-- Navbar on small screens -->
-    <div
-      id="navDemo"
-      class="bar-block theme-d2 hide hide-large hide-medium show"
-      style="padding-top: 10%"
-    >
-      <a href="/docs/francais/ecole.html" class="bar-item button">École</a>
-      <a href="/docs/francais/pension.html" class="bar-item button">Pension</a>
-      <a href="/docs/francais/vente.html" class="bar-item button">Vente</a>
-      <a href="/docs/francais/entrainement.html" class="bar-item button"
-        >Entrainement</a
-      >
-      <a href="/docs/francais/evenements.html" class="bar-item button"
-        >Évènements</a
-      >
-      <a href="/docs/francais/zootherapie.html" class="bar-item button"
-        >Zoothérapie</a
-      >
-      <a
-        href="/docs/francais/distributeur-nature-belisle.html"
-        class="bar-item button"
-        >Distributeur Nature Bélisle</a
-      >
-      <a href="/docs/francais/produitsequestres.html" class="bar-item button"
-        >Produits Équestres</a
-      >
-      <a href="#contact" class="bar-item button">Contact</a>
-      <a href="/docs/english/index-en.html" class="bar-item button">EN</a>
-    </div>
+    <div id="navbar-fr"></div>
     <!-- Image Header Banner -->
     <div class="center display-container animate-opacity hide-small">
       <img
@@ -210,7 +138,7 @@
             </p>
           </div>
         </div>
-        <div class="quarter">
+        <div class="two-columns">
           <img
             src="/docs/images/jessica1.png"
             alt="jessica beauchemin"
@@ -244,7 +172,7 @@
           </p>
         </div>
 
-        <div class="quarter">
+        <div class="two-columns">
           <img
             src="docs/images/claudie.jpg"
             alt="claudie charland"
@@ -254,41 +182,6 @@
           <h3>Claudie Charland</h3>
           <h5>Instructrice Dressage/Chasseur/Sauteur</h5>
           <p class="justify"></p>
-        </div>
-
-        <div class="quarter">
-          <img
-            src="/docs/images/maya.jpg"
-            alt="maya gulin"
-            style="width: 45%"
-            class="circle hover-opacity"
-          />
-          <h3>Maya Gulin</h3>
-          <h5>Instructrice Chasseur/Sauteur</h5>
-          <p class="justify">
-            Maya a une expérience diversifiée dans le travail des chevaux depuis
-            son plus jeune âge alors qu'elle vivait à Khartoum, au Soudan, avec
-            des chevaux rescapés et des chevaux réformés des courses. À son
-            retour au Canada, elle a participé à de nombreux concours de chasse
-            et saut d'obstacles.
-          </p>
-          <p class="justify">
-            Maya est diplômée de l'Université d'art et de design Emily Carr du
-            programme Film Video and Integrated media. Après sa graduation, elle
-            a passé trois saisons en tant que chef wrangler et gérante d'écurie
-            au Big Bar Guest Ranch dans la région de Cariboo en
-            Colombie-Britannique. Elle se spécialise en rééduquation et en
-            entrainement de chevaux d'un passé souvent difficile et se concentre
-            sur la création de la confiance entre le cheval et le cavalier et
-            sur le renforcement des moyens de communication.
-          </p>
-          <p class="justify">
-            Elle vit à Montréal où elle est peintre, écrivaine et expérimente le
-            cinéma. Ses peintures ont été présentées dans des galeries à travers
-            le Canada et ses films en collaboration avec son partenaire cinéaste
-            ont été projetés dans divers festivals de films. Elle aime voyager,
-            partir à l'aventure, les concerts et la vie en général !
-          </p>
         </div>
       </div>
     </div>
@@ -441,48 +334,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="container padding-32 theme-d1">
-      <div
-        style="position: relative; max-width: 300px"
-        class="tooltip left hide-small"
-      >
-        <img src="/docs/images/logo-white-no-text.png" alt="logo-white" />
-      </div>
-      <div class="center" style="position: relative; left: -7.5%">
-        <h3 class="hide-small">Retrouvez-nous sur les réseaux sociaux</h3>
-        <a
-          class="button xxlarge"
-          href="https://www.facebook.com/vintageoasisfarm/"
-          target="_blank"
-          title="Facebook"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a
-          class="button xxlarge"
-          href="https://www.instagram.com/ferme.vintage.oasis.farm/"
-          target="_blank"
-          title="Instagram"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
-      <div style="position: relative; z-index: 1" class="tooltip right">
-        <a class="button theme" href="#accueil"
-          ><span class="xlarge"> <i class="fa fa-chevron-circle-up"></i></span
-        ></a>
-      </div>
-    </footer>
-    <script>
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
-      }
-    </script>
+    <!--Footer-->
+    <div id="footer-fr"></div>
   </body>
 </html>
