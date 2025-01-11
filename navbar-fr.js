@@ -7,18 +7,20 @@ function loadNavbarFr() {
   // Set class for Accueil button based on whether it's the home page
   const accueilClass = isHomePage ? "green" : "black";
 
-  // Check if we are on one of the Equitation pages
-  const isEquitationPage = [
-    "/docs/francais/ecole.html",
-    "/docs/francais/pension.html",
-    "/docs/francais/vente.html",
-    "/docs/francais/entrainement.html",
-  ].includes(currentPage);
+  // Define page mappings from French to English
+  const pageMappings = {
+    "/index.html": "/docs/english/index-en.html",
+    "/docs/francais/ecole.html": "/docs/english/school.html",
+    "/docs/francais/vente.html": "/docs/english/sale.html",
+    "/docs/francais/entrainement.html": "/docs/english/training.html",
+    "/docs/francais/zootherapie.html": "/docs/english/zootherapy.html",
+  };
 
-  // Set the Equitation button class based on whether one of its pages is active
-  const equitationClass = isEquitationPage ? "green" : "";
+  // Get the corresponding English page for the current French page
+  const englishPage =
+    pageMappings[currentPage] || "/docs/english/index-en.html"; // Default to home if not mapped
 
-  // Define the navbar HTML with dynamic classes
+  // Define the navbar HTML without the Équitation dropdown
   const navbarFrHTML = `
       <div class="top">
         <div class="bar theme-d2 left-align">
@@ -30,40 +32,23 @@ function loadNavbarFr() {
           ></a>
           <a href="/index.html" class="${accueilClass} bar-item button hover-gold">
             <i class="fa fa-home margin-right"></i>Accueil</a>
-          <div class="dropdown-hover hide-small">
-            <button class="button hover-gold ${equitationClass}" title="equitation">
-              Équitation <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content card-4 bar-block">
-              <a href="/docs/francais/ecole.html" class="button hover-gold ${
-                currentPage === "/docs/francais/ecole.html" ? "green" : ""
-              }">
-                École</a>
-              <a href="/docs/francais/pension.html" class="button hover-gold ${
-                currentPage === "/docs/francais/pension.html" ? "green" : ""
-              }">
-                Pension</a>
-              <a href="/docs/francais/vente.html" class="button hover-gold ${
-                currentPage === "/docs/francais/vente.html" ? "green" : ""
-              }">
-                Vente</a>
-              <a href="/docs/francais/entrainement.html" class="button hover-gold ${
-                currentPage === "/docs/francais/entrainement.html"
-                  ? "green"
-                  : ""
-              }">
-                Entrainement</a>
-            </div>
-          </div>
-          <a href="/docs/francais/evenements.html" class="bar-item button hide-small hover-gold ${
-            currentPage === "/docs/francais/evenements.html" ? "green" : ""
+          <a href="/docs/francais/ecole.html" class="bar-item button hover-gold ${
+            currentPage === "/docs/francais/ecole.html" ? "green" : ""
           }">
-            Évènements</a>
+            École</a>
+          <a href="/docs/francais/vente.html" class="bar-item button hover-gold ${
+            currentPage === "/docs/francais/vente.html" ? "green" : ""
+          }">
+            Vente</a>
+          <a href="/docs/francais/entrainement.html" class="bar-item button hover-gold ${
+            currentPage === "/docs/francais/entrainement.html" ? "green" : ""
+          }">
+            Entrainement</a>
           <a href="/docs/francais/zootherapie.html" class="bar-item button hide-small hover-gold ${
             currentPage === "/docs/francais/zootherapie.html" ? "green" : ""
           }">
             Zoothérapie</a>
-          <a href="/docs/english/boarding.html" class="bar-item button hide-small hover-gold right">
+          <a href="${englishPage}" class="bar-item button hide-small hover-gold right">
             EN</a>
           <a href="/index.html#contact" class="bar-item button hide-small hover-gold right">
             Contact</a>
@@ -75,10 +60,6 @@ function loadNavbarFr() {
           currentPage === "/docs/francais/ecole.html" ? "green" : ""
         }">
           École</a>
-        <a href="/docs/francais/pension.html" class="bar-item button ${
-          currentPage === "/docs/francais/pension.html" ? "green" : ""
-        }">
-          Pension</a>
         <a href="/docs/francais/vente.html" class="bar-item button ${
           currentPage === "/docs/francais/vente.html" ? "green" : ""
         }">
@@ -87,10 +68,6 @@ function loadNavbarFr() {
           currentPage === "/docs/francais/entrainement.html" ? "green" : ""
         }">
           Entrainement</a>
-        <a href="/docs/francais/evenements.html" class="bar-item button ${
-          currentPage === "/docs/francais/evenements.html" ? "green" : ""
-        }">
-          Évènements</a>
         <a href="/docs/francais/zootherapie.html" class="bar-item button ${
           currentPage === "/docs/francais/zootherapie.html" ? "green" : ""
         }">
@@ -99,7 +76,7 @@ function loadNavbarFr() {
           currentPage.includes("/index.html#contact") ? "green" : ""
         }">
           Contact</a>
-        <a href="/docs/english/boarding.html" class="bar-item button">
+        <a href="${englishPage}" class="bar-item button">
           EN</a>
       </div>
     `;
